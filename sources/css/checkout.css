@@ -1,0 +1,99 @@
+body{
+    background-image: url(/images/bg.jpg);
+    font-family:arial;
+    font-size:17px;
+    padding:8px;
+}
+h2{
+    text-align: center;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.row{
+    display: -ms-flexbox ;
+    display:flex;
+    flex-wrap: wrap; 
+    -ms-flex-wrap: wrap;
+}
+
+.col-25{
+    -ms-flex:25% ;
+    flex=25%
+}
+.col-50{
+    -ms-flex:50% ;
+    flex=50%
+}
+.col-75{
+    -ms-flex:75% ;
+    flex=75%
+}
+
+.col-25,.col-50,.col-75{
+    padding: 0 16px;
+}
+.container{
+    display:flex;
+    background-color: rgb(245, 245, 245);
+    padding: 3px 18px 13px 18px;
+    border-radius: 3px;
+}
+input[type=email],input[type=text]{
+    width:100%;
+    margin-bottom:20px;
+    padding:12px;
+    border:1px solid white;
+    border-radius: 3px;
+}
+
+label{
+    margin-bottom: 10px;
+    display:block;
+}
+.icon-container{
+    display:flex;
+    width: 25%;
+    margin-bottom: 20px;
+    padding:7px 0px;
+    font-size:24px;
+}
+.btn{
+    background-color: forestgreen;
+    color: white;
+    padding:12px;
+    border :none;
+    border-radius: 3px;
+    width:100%;
+    cursor:pointer;
+    font-size:17px;
+}
+.btn:hover{
+ background-color: lawngreen;
+}
+a{
+    color: lightgray;
+}
+span.price{
+    float: right;
+    color: gray;
+}
+.concol{
+    display: flex;
+    flex-direction: column;
+    width:20vw;   
+}
+@media(max-width:800px){
+    .row{
+        flex-direction: column-reverse;
+    }
+    .col-25{
+        margin-bottom:20px;
+    }
+    .container{
+        width=100vw;
+    }
+}
