@@ -3,18 +3,13 @@
     padding: 0;
 }
 body{
-    /* background: url(./markus-spiske-pZX9QPxeIQc-unsplash.jpg); */
-    /* background: url(./bg.jpg); */
     background-color: white;
-    /* background: url(./annie-spratt-yI3weKNBRTc-unsplash.jpg); */
 }
-
 .outer{
     display: flex;
     justify-content: center;
     margin: 0;
     align-items: center;
-  
 }
 .inner{
     display: flex;
@@ -23,21 +18,13 @@ body{
     border:3px solid #cdcdcd;
     margin: auto;
     margin-top: 60px;
-    /* padding: 20px; */
-    /* opacity: 0.8; */
-    /* background-color: #1DA1F2; */
-    /* background: rgba(2, 2, 1, 0); */
-    
 }
 .inner form{
-    /* background: rgb(192, 180, 180); */
     margin: auto;
-    /* margin-top: 10px; */
     padding-top: 10px;
     height: 492.367px;
     width: 400px;
     background-color:white;
-    /* background: url(./scott-webb-hDyO6rr3kqk-unsplash.jpg); */
 }
 .inner .google button{
     display: flex;
@@ -45,8 +32,6 @@ body{
 }
 .inner h1{
     text-align: center;
-    /* margin-right: 50px; */
-    /* margin-left: 10px; */
     margin-bottom: 20px;
     color: black;
     opacity: 1;
@@ -62,15 +47,9 @@ body{
     margin: 20px;
     margin-left: 50px;
     margin-right: 50px;
-    /* margin-bottom: 30px; */
-    /* width: 258px; */
     background: transparent;
    
 }
-/* .inner label:hover{
-    opacity: 0.7; */
-   /* transition: ease-out;
-} */
 .inner label input{
     padding: 5px;
     border-radius: 5px;
@@ -80,21 +59,16 @@ body{
     opacity: 0.8;
     font-weight: 800;
     border:3px solid #eeeeee;
-    /* border:3px solid #ddd7d7; */
     outline: none;
     opacity: 1;
-    /* background-color:white; */
     background: white;
-    /* background: url(./scott-webb-hDyO6rr3kqk-unsplash.jpg); */
 }
 .inner label input::placeholder{
     color:#7f8286;
     font-weight: 800;
 }
 .inner label input:hover{
-    /* opacity: 0.7; */
     border:3px solid #ddd7d7;
-    /* border:3px solid #eeeeee; */
     margin-top: -0.5px;
 }
 
@@ -106,7 +80,6 @@ body{
     width: 130px;
     border-radius: 25px;
     border:3px solid #eeeeee;
-    /* border:3px solid white; */
     font-weight: 800;
     color: black;
     display: block;
@@ -116,7 +89,6 @@ body{
     outline: none;
     opacity: 1; 
     background-color: white;
-    /* background:url(./scott-webb-hDyO6rr3kqk-unsplash.jpg); */
 }
 .inner label button:hover{
     background: #eeeeee;
@@ -143,10 +115,6 @@ body{
     margin-left: 265px;
     color: black;
 }
-/* .icon1{
-    float: right;
-    margin-top: ;
-} */
 #showPassword,
 .inner label span {
     display: flex;
@@ -166,8 +134,6 @@ body{
     right: 290px;
     top: 7px;
     background: transparent;
-    /*width: 60px;
-    height:25px;*/
 }
 #sign-in-with-google{
     display: inline-block;
@@ -183,10 +149,8 @@ body{
     opacity: 1;
     background: white;
     outline: none;
-    /* margin-top: 10px; */
 }
 #sign-in-with-google:hover{
-    /* opacity: 0.7; */
     border:3px solid #ddd7d7;
     background: #eeeeee;
     margin-top: -0.5px;
@@ -200,9 +164,5 @@ body{
     .inner{
         border: none;
         
-    }
-    
-}
-@media only screen and (max-width: 330px){
-   
+    }  
 }
