@@ -37,7 +37,7 @@ body {
     border-radius: 20px;
     outline: none;
     font-size: 16px;
-    background-image: url('../image/glass.png');
+    background-image: url('/images/glass.png');
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
@@ -51,7 +51,7 @@ body {
     /* margin-left: 80px; */
     border-radius: 20px;
     appearance: none;
-    background-image: url('../image/expand-more.png');
+    background-image: url('/images/expand-more.png');
     background-repeat: no-repeat;
     background-position-x: 65px;
     background-position-y: 8px;
@@ -340,7 +340,7 @@ body {
 
 /*Fabric Finish Background start*/
 .fabric-finish {
-    background-image: url("../image/fabric-grey.jpg");
+    background-image: url("/images/fabric-grey.jpg");
 }
 
 /*Fabric Finish Background end*/
@@ -435,7 +435,7 @@ body {
 
 .fabric-sandal {
     margin-top: 20px;
-    background-image: url("../image/fabric-sandal.jpeg");
+    background-image: url("/images/fabric-sandal.jpeg");
 }
 
 .today-deals-listing {
@@ -550,7 +550,7 @@ body {
 
 /*Fabric blue background starts*/
 .fabric-blue {
-    background-image: url("../image/fabric-blue.jpg");
+    background-image: url("/images/fabric-blue.jpg");
 }
 
 /*Fabric blue background end*/
@@ -561,7 +561,7 @@ body {
     justify-content: space-evenly;
     height: 250px;
     align-items: center;
-    background-image: url('../image/footerimg.jpg');
+    background-image: url('/images/footerimg.jpg');
 }
 
 .footer li {
