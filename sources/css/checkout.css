@@ -1,3 +1,8 @@
+
+*{  margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
 body{
     background-image: url(/images/bg.jpg);
     font-family:arial;
@@ -6,11 +11,17 @@ body{
 }
 h2{
     text-align: center;
+    margin:10px;
 
 }
+h3{
+    text-align: center;
+    margin:10px;
 
-*{
-    box-sizing: border-box;
+}
+h4{
+    margin:10px;
+
 }
 
 .row{
@@ -22,15 +33,16 @@ h2{
 
 .col-25{
     -ms-flex:25% ;
-    flex=25%
+    flex=25%;
 }
 .col-50{
-    -ms-flex:50% ;
-    flex=50%
+    width:450px;
+    -ms-flex:30% ;
+    flex=30%;
 }
 .col-75{
-    -ms-flex:75% ;
-    flex=75%
+    -ms-flex:60% ;
+    flex=60%;
 }
 
 .col-25,.col-50,.col-75{
@@ -43,7 +55,7 @@ h2{
     border-radius: 3px;
 }
 input[type=email],input[type=text]{
-    width:100%;
+    width:85%;
     margin-bottom:20px;
     padding:12px;
     border:1px solid white;
@@ -57,6 +69,7 @@ label{
 .icon-container{
     display:flex;
     width: 25%;
+    justify-content: space-evenly;
     margin-bottom: 20px;
     padding:7px 0px;
     font-size:24px;
@@ -72,28 +85,48 @@ label{
     font-size:17px;
 }
 .btn:hover{
- background-color: lawngreen;
+    background-color: lawngreen;
 }
 a{
-    color: lightgray;
+    color: black;
+    text-decoration: none;
 }
 span.price{
     float: right;
     color: gray;
 }
-.concol{
+.chandru{
+    /* height ethanum */
     display: flex;
+    background-color: rgb(245, 245, 245);
+    padding: 3px 18px 13px 18px;
     flex-direction: column;
-    width:20vw;   
+    width:300px;   
+    border-radius: 5px;
 }
 @media(max-width:800px){
+
+    body{
+        margin:0px;
+    }
     .row{
         flex-direction: column-reverse;
     }
     .col-25{
         margin-bottom:20px;
     }
+    h2{
+        text-align: left;
+        margin:10px;
     .container{
+        
+        margin:0px;
         width=100vw;
+        
+    }
+    .chandru{
+        margin:0px;
+        width:500px;   
+
     }
 }
