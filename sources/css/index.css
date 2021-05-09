@@ -6,6 +6,7 @@
 a {
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 body {
@@ -23,15 +24,16 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 1050px;
+    height: 60px;
     margin: auto;
 }
 #logo {
     height: 60px;
+    width: 60px;
     cursor: pointer;
 }
 
 #Search-box {
-    /* margin-left: 50px; */
     height: 30px;
     width: 500px;
     border-radius: 20px;
@@ -43,12 +45,16 @@ body {
     background-repeat: no-repeat;
 }
 
-
+#search-icon{
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-color: rgb(68, 67, 67);
+}
 
 #city {
     width: 92.15px;
     height: 24px;
-    /* margin-left: 80px; */
     border-radius: 20px;
     appearance: none;
     background-image: url('/images/expand-more.png');
@@ -56,17 +62,16 @@ body {
     background-position-x: 65px;
     background-position-y: 8px;
     cursor: pointer;
+    background-color: white;
 }
 
 #cart {
-    /* margin-left: 25px; */
     background-color: transparent;
     cursor: pointer;
 }
 
 #Sign-Up {
     display: flex;
-    /* margin-left: 25px; */
     height: 30px;
     border-radius: 10px;
     padding-top: 10px;
@@ -85,7 +90,6 @@ body {
 
 #Login {
     display: flex;
-    /* margin-left: 25px; */
     height: 30px;
     border-radius: 10px;
     padding-top: 10px;
@@ -114,6 +118,7 @@ body {
     overflow: hidden;
     justify-content: center;
     height: min-content;
+    align-items: center;
 }
 
 #s1 {
@@ -145,28 +150,24 @@ body {
     align-items: center;
     width: 50px;
     height: 50px;
-    position: absolute;
-    left: 0px;
-    top: 250px;
     background-color: whitesmoke;
     cursor: pointer;
-    opacity: 80%;
-    z-index: 20;
-}
+    position: absolute;
+    left: 0px;
+} 
 
 #next {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    right: 0px;
-    top: 250px;
     width: 50px;
     height: 50px;
     background-color: whitesmoke;
     cursor: pointer;
     opacity: 80%;
     z-index: 20;
+    position: absolute;
+    right: 0px;
 }
 
 /*Carousel End*/
@@ -313,7 +314,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    height: 100%;
 }
 
 /*Combo boxes ends*/
@@ -396,6 +396,9 @@ body {
 }
 
 /*nav bar 1 starts */
+#explore{
+    display: none;
+}
 .nav-bar1 {
     height: 50px;
     background-color: #84d6b591;
@@ -421,6 +424,10 @@ body {
 
 .nav-bar1 a:hover {
     color: orangered;
+}
+
+#ham{
+    display: none;
 }
 
 /*nav bar 1 ends*/
@@ -588,19 +595,6 @@ body {
     .nav-content1{
         width: 85%
     }
-    /*
-    #Search-box{
-        margin-left: 0px;
-    }
-    #city{
-        margin-left: 0px;
-    }
-    #sign-up{
-        margin-left: 0px;
-    }
-    #login{
-        margin-left: 0px;
-    }*/
     #Search-box{
         width: 300px;
         font-size: x-small;
@@ -622,10 +616,7 @@ body {
         width: 200px;
         height: 200px;
     }
-    
-    /* .products{
-        margin-right: 20px;
-    } */
+
     .Card-front{
         width: 250px;
         height: 250px;
@@ -678,13 +669,15 @@ body {
     #farmer{
         width: 300px;
         height: 300px;
-        border-radius: 250px 0px 0px 0px;
         object-fit: cover;
     }
     #Buy-Now{
         padding: 10px;
         font-size: 16px;
         margin: auto;
+    }
+    .organic{
+        width: 95%;
     }
     #organic-img{
         width: 300px;
@@ -693,11 +686,11 @@ body {
     }
     .Card-front{
         width: 200px;
-        height: 200px;
+        height: 250px;
     }
     .Card-back{
         width: 200px;
-        height: 200px;
+        height: 250px;
     }
     .deal-cards{
         width: 150px;
@@ -726,8 +719,11 @@ body {
         width: 75vw;
     }
     .combo-boxes{
-        height: 1000px;
+        height: 600px;
     }
+    .Card-container{
+        height: 250px;
+       }
 }
 @media (max-width: 900px){
     #Search-box{
@@ -780,11 +776,13 @@ body {
         align-items: center;
         width: 35px;
         width: 35px;
-        background-color: gold;
+        background-color: rgb(247, 96, 9);
         color: white;
+        cursor: pointer;
+        border-radius: 10px;
     }
-    .today-deals-listing{
-        overflow-y: hidden;
+    .lastone{
+        display: none;
     }
     .contactus{
         display: flex;
@@ -813,16 +811,163 @@ body {
     .organic p{
         line-height: 30px;
     }
+    #farmer{
+        width: 250px;
+    }
+    .txt-header{
+        font-size: 18px;
+    }
+    .sub-heading{
+        font-size: 14px;
+    }
 }
 @media (max-width: 750px){
+    .combo-boxes{
+        height: 850px;
+    }
+}
+@media (max-width: 550px){
+    #Search-box{
+        width: 200px;
+        font-size: 10px;
+        background-image: none;
+    }
+    .usp p {
+        line-height: 25px;
+    }
+    #organic-img{
+        width: 200px;
+    }
+    .combo-boxes{
+        width: 95%;
+    }
+    .testimonial{
+        width: 90vw;
+    }
+}
+@media (max-width: 500px){
+    #Search-box{
+        display: none;
+    }
+    #search-icon{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        position:relative;
+        left: 50px;
+        border-radius: 10px;
+        background-color: white;
+        cursor: pointer;
+    }
+    #city{
+        position: relative;
+        left: 40px;
+        flex-shrink: 0;
+    }
+    #cart{
+        position: relative;
+        left: 15px;
+    }
+    .usp{
+        display: none;
+    }
+    .organic{
+        display: none;
+    }
+    .todays-deals{
+        height: 450px;
+    }
+    .lastone{
+        display: inline-block;
+    }
+    .today-deals-listing{
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 450px){
+    .Card-front{
+        width: 175px;
+        height: 210px;
+    }
+    .Card-back{
+        width: 175px;
+        height: 210px;
+        font-size: 16px;
+    }
+    .nav-content{
+        width: 100%;
+    }
+    #poster{
+        width: 150px;
+        height: 150px;
+    }
+    .nav-content1 a{
+        display: none;
+    }
+    #ham{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background-color: white;
+        position: absolute;
+        right: 0;
+    }
+    .nav-content{
+        height: 60px;
+    }
+    #ham:active{
+        background-color: rgb(110, 108, 108);
+    }
+    .nav-bar1 a{
+        margin-top: 20px;
+    }
+    .testimonial{
+        width:99%;
+    }
     #prev{
-        top: calc(0.35 * 100vw);
-        width: 35px;
-        height: 35px;
+        width: 25px;
+        height: 25px;
     }
     #next{
-        top: calc(0.35 * 100vw);
-        width: 35px;
-        height: 35px;
+        width: 25px;
+        height: 25px;
+    } 
+    #testimonial-prev{
+        width: 20px;
+        height: 20px;
+    }
+    #testimonial-next{
+        width: 20px;
+        height: 20px;
+    }
+    #search-icon{
+        left: 25px;
+    }
+    #city{
+        left: 15px;
+    }
+    #cart{
+        left: 5px;
+    }
+    #explore{
+        display: inline-block;
+        font-size: large;
+    }
+}
+@media (max-width: 400px){
+    .Card-front{
+        width: 150px;
+        height: 210px;
+        font-size: small;
+    }
+    .Card-back{
+        width: 150px;
+        height: 210px;
+        font-size: small;
     }
 }
