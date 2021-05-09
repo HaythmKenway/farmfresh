@@ -92,8 +92,35 @@ async function prevTestimonial() {
 }
 //To move to the next Testimonial
 async function nextTestimonial() {
-        testimonialslider()
-        test_next = true
-        await sleep(2000)
-        test_next = false
+    testimonialslider()
+    test_next = true
+    await sleep(2000)
+    test_next = false
+}
+let isopen = false
+function hamOpen() {
+    if (isopen == false) {
+        isopen = true
+        document.getElementById('prev').style.position.top = document.body.scrollHeight
+        document.getElementById('next').style.top = document.body.scrollHeight
+        document.querySelector('#nav-con1').style.flexDirection = "colomn";
+        let links = document.querySelectorAll(".nav-content1 a")
+        for (i = 0; i < links.length; i++) {
+            links[i].style.display = "inline-block"
+            links[i].style.fontSize = "16px"
+        }
+        let con = document.getElementById('nav-con1')
+        con.style.flexDirection = "column"
+        document.querySelector('.nav-bar1').style.height = "600px";
+        document.getElementById('explore').style.display = "none"
+    }
+    else {
+        let links = document.querySelectorAll(".nav-content1 a")
+        for (i = 0; i < links.length; i++)
+            links[i].style.display = "none"
+        document.querySelector('.nav-bar1').style.height = "50px";
+        document.getElementById('explore').style.display = "inline-block"
+        document.querySelector('#nav-con1').style.flexDirection = "row";
+        isopen = false
+    }
 }
