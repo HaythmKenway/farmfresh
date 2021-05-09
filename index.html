@@ -19,11 +19,11 @@
     <!-- nav bar starts -->
     <div class="nav-bar">
         <div class="nav-content">
-            <img src="/images/logo1.png" alt="logo" id="logo">
+            <img src="..\image\logo1.png" alt="logo" id="logo">
             <input type="text" id="Search-box" placeholder="Search for veggies, fruits, dairy and much more">
-            <!-- <i><span class="material-icons-outlined" id="glass"> -->
             <!-- search -->
             <!-- </span></i> -->
+            <button id='search-icon'><span class="material-icons-outlined" id="glass">search</span></button>
             <select id='city'>
                 <option value="Chennai">Chennai</option>
                 <option value="Banglore">Banglore</option>
@@ -47,7 +47,13 @@
 
     <!-- nav bar 1 starts -->
     <div class="nav-bar1">
-        <div class="nav-content1">
+        <button id="ham" onclick="hamOpen()"><span class="material-icons-outlined">
+                menu
+            </span></button>
+        <div class="nav-content1" id="nav-con1">
+            <span id="explore">
+                Explore our products
+            </span>
             <a href="#">
                 <li>Combo Box</li>
             </a>
@@ -136,7 +142,7 @@
                 </tr>
                 </table>
                 </a>
-                <a href="#">
+                <a href="#" class="lastone">
                     <table class="products">
                         <caption style="caption-side: bottom;"><span class="txt-header"><a
                                     href="#">Honey</span><br><span class="sub-heading">&#8377 350 / L</span>
@@ -190,7 +196,7 @@
                 </tr>
                 </table>
                 </a>
-                <a href="#">
+                <a href="#" class="lastone">
                     <table class="products">
                         <caption style="caption-side: bottom;"><span class="txt-header"><a
                                     href="#">Beetroot</span><br><span class="sub-heading">&#8377 40 / kg</span>
@@ -474,32 +480,32 @@
     <div class="footer">
         <div class="contactus">
             <ul type=none>
-                <li>Contact Us</li>
-                <li>+91 9999988888</li>
-                <li>enquiries@farmfresh.com</li>
+                <li><a>Contact Us</a></li>
+                <li><a>+91 9999988888</a></li>
+                <li><a>enquiries@farmfresh.com</a></li>
             </ul>
         </div>
         <div class='enquiries'>
             <ul type='none'>
-                <li>Payment and Billing</li>
-                <li>Returns</li>
-                <li>FAQ</li>
-                <li>Customer Forum</li>
+                <li><a>Payment and Billing</a></li>
+                <li><a>Returns</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Customer Forum</a></li>
             </ul>
         </div>
         <div class='about-us'>
             <ul type='none'>
-                <li>About Us</li>
-                <li>Work with Us</li>
-                <li>Privacy Policy</li>
-                <li>Terms and Conditions</li>
+                <li><a>About Us</a></li>
+                <li><a>Work with Us</a></li>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms and Conditions</a></li>
             </ul>
         </div>
     </div>
     <!--Footer End-->
 
     <!-- Script -->
-    <script src="sources/javascript/index.js"></script>
+    <script src="/sources/js/index.js"></script>
 </body>
 
 </html>
