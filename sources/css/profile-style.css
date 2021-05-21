@@ -1,0 +1,919 @@
+body{
+    box-sizing: border-box;
+    background-color:rgb(0,0,0,0.1);
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.nav-bar {
+    height: 60px;
+    background-color: #2CDB95;
+}
+.nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1050px;
+    height: 60px;
+    margin: auto;
+}
+#logo {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+#Search-box {
+    height: 30px;
+    width: 500px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    background-image: url('https://github.com/fireclasher/farmfresh/blob/master/images/glass.png?raw=true');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#search-icon{
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-color: rgb(68, 67, 67);
+}
+
+#city {
+    width: 92.15px;
+    height: 24px;
+    border-radius: 20px;
+    appearance: none;
+    background-image: url('https://github.com/fireclasher/farmfresh/blob/master/images/expand-more.png?raw=true');
+    background-repeat: no-repeat;
+    background-position-x: 65px;
+    background-position-y: 8px;
+    cursor: pointer;
+    background-color: white;
+}
+
+#cart {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+#Sign-Up {
+    display: flex;
+    height: 30px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    background-color: gold;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+#Sign-Up:hover {
+    background-color: goldenrod;
+}
+
+#Login {
+    display: flex;
+    height: 30px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+#Login:hover {
+    background-color: gray;
+}
+
+#signupAndLogin{
+    display:none;
+}
+#explore{
+    display: none;
+}
+.nav-bar1 {
+    height: 50px;
+    background-color: #84d6b591;
+}
+
+.nav-content1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1050px;
+    height: 100%;
+    margin: auto;
+}
+
+.nav-bar1 li {
+    display: inline-block;
+}
+
+.nav-bar1 a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-bar1 a:hover {
+    color: orangered;
+}
+
+#ham{
+    display: none;
+}
+.container{
+    margin-inline-start: 175px;
+    margin-right: 175px;
+}
+.main{
+    background-color: white;
+    margin-top: 20px;
+    width: 900px;
+    margin-left: 75px;
+    padding: 30px 60px;
+    display: flex;
+}
+.image{
+    padding-right: 50px;
+}
+.rate p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.info{
+    padding-left: 30px;
+    line-height: 32px;
+}
+.info h1{
+    font-weight: bold;
+}
+.info p{
+    font-size: 20px;
+}
+#occ{
+    color: dodgerblue;
+}
+.btn button{
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 2px;
+    width: fit-content;
+    padding: 10px 10px;
+    font-weight: bold;
+    color: white;
+}
+.btn{
+    margin-left: 200px;
+    padding-top: 25px;
+}
+.btn button:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+.user-1{
+    font-size: 32px;
+    height: 20px;
+    margin-top: -20px;
+}
+#stars-1{
+    color: gold;
+    padding-left: 30px;
+}
+
+.rate {
+    display: inline-flex;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: gold;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: gold;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: gold;
+}
+.row h1{
+    
+    margin-left: 75px;
+
+} 
+.r-block{
+    display: flex;
+    margin-left: 75px;
+}
+
+.r-image{
+    padding: 10px;
+    background-color: white;
+    margin: 0 15px 0 10px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 3px;
+
+}
+.r-image img{
+    width: 300px;
+    height: 280px;
+    align-content: center;
+    border-radius: 2px;
+} 
+.circular{
+    position: relative;
+    display: inline-block;
+    width: 12rem;
+    height: 12rem;
+    margin-top: 30px;
+    border: 1.4rem solid blue;
+    text-align: center;
+    border-radius: 9rem;
+    border-bottom-color: #fff;
+    border-top-color: blue;
+    border-right-color: blue;
+    box-sizing: border-box;
+    box-shadow: 0 0 7px rgba(0, 0, 0,0.3);
+}
+.c-value{
+    position: absolute;
+    top: 50px;
+    font-size: 44px;
+    left: 0;
+    right: 0;
+}
+.c-label{
+    position: absolute;
+    left: 0;
+    top: 210px;
+    font-size: 24px;
+    width: 100%;
+}
+.text{
+    text-align: center;
+    font-size: 24px;
+}
+#sale{
+    margin-top: -20px;
+}
+#c-top{
+    font-size: 28px;
+}
+#c-mid{
+    background-color: dodgerblue;
+    width: 70px;
+    padding: 20px ;
+    margin-left: 100px;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+#c-btm{
+    font-size: 24px;
+    margin-top: 60px;
+
+}
+#c-top1{
+    font-size: 28px;
+}
+.circle{
+    display: flex;
+    margin-top: -10px;
+    justify-content: center;
+}
+#c-mid1{
+    background-color: dodgerblue;
+    padding: 30px;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    margin-right: 5px;
+    
+}
+#c-mid2{
+    background-color: green;
+    padding: 30px;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    
+}
+
+#c-btm1{
+    font-size: 20px;  
+    color: dodgerblue;
+}
+#c-btm2{
+    font-size: 20px;
+    color: green;
+    margin-top: -10px;
+}
+
+.v-block h1{
+    margin-left: 80px;
+   
+}
+iframe{
+    margin-left: 250px;
+    padding: 20px;
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFRUXGBYXGBYXGRkVGBcWGBodFxgXGhcYHyggGBolGxcVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NFQ0PFSsdFR0tLTc3LS0tLS03Ny0tLS0tLTctNy0rLS03NzctNy0tLTc3LS0tLS0tNzctNy03Nzc3Lf/AABEIAOEA4QMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAAAAQIDBAf/xAA3EAABAgEJBgUEAgMBAQEAAAABAAIREiFBUWGRodHwAzFScYHBE2KSseEiQqLxMrJygtLyBOL/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQT/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD0U7dwpN7T3TG3NtPD2KR2RsuVNYZ/pEVhaVeIazhmkNqbd9mapuy8oSDDVMgPFOnD2imXmo3jNBZ5ZkFp4UEl5t5RCmX/AJXhW/ZVAKTszDcNdUEl5rdggOMabwq8IwnaAkNkaggC+uV6glL/AMrx2KvwzUFLmGy5Ao2u9Q7qmuqLvW3NKSbLlQ2Z3wA6CKAlmed3rGazlmku6kKvCNlwRINQQAca3eoTKpdbj6gk1psCuRyp1uQZgkUu9QVeIaz6gkWGkJeGagoBxrjNbvSL5t5vCDszUm9s1GuiCImt1f8AIKQTW71BaPa6wqQw2RVCDzW4/wC4yU+J/l6wey0GyNmHVUWmz3sQZeIbfV8IO05+vtBaSTXjDFINdViEVn4g83qQtIcvUhAAiO7AoljUQrDHWXHNOSdA9kRAdGE3unEQHyqLXWXOQA+z8kETajkgPE84xTg6r+yotdV/ZBmdpyN6ceWKoh1mKch2gUEHdQlPULytPCdoOVFr9ByDGNcNckwZv2Vfhvs/JJzTSRigzJFXuqgDR7hOBrCbWmsYoIBFXvvR9NuK0nhvGOSgRqQKWKjDkfZAIq7Yq4HkmI1oIcRqKiLavdaua6v3KietBMsWKS4VC3UVr9VaGuPFgEGTXiodflUXCzXVaSzxeyPqr9ooMYioatKAd8wWpBO93siSaXYBBDncr/lSHcltF3EbmpxdxH8UGUbRihPxDWcEIG9h4cYpSSftxB7oLBuhu7qois+8EEyTw+2aJPlF4ViBruvpSIG6fXVAg2w3/KZZZipiN0fjFOa3DNAiw8OISLTw9I/M6pzhbFJzhWboICQeE3qiw7pJvOaRtjcggW66oKbs38JvKbhYb0iQN0TrfvSMKj1HygZHlN4KUh3CbwlAH7TzgiSKvaZBo3Zvh/E3gKHbM8JvCPDFqCKYXwQA2Z3wxCAw1ctyQFg10VNFgGXUIJGzNQwTDbDekQKsUgBuA90FFtnspkGqbomQKvfJBNmrkC8M1eyXhk1XhG8zDD3QzZmkdIfKBhjqsVY2bqodQoGzFLTr2SA3gNzQMtPDilA8IvTJHBP1iiT5ZuSKmS6pt6E5Iqw+EILBHC6PWZMPHm9kFvI/7NzUlojCb1NzRDiCqJGiZlEgaLc1UOQ6jNATR34olij3KR54jciFovGaAlio4pOdugDim8DRG9Igdf8AIQ6zoKDojcce6kPG+EOqQYLPUM0g2NR6hBTtpZjFMvEKUSRojNOArxCCZTauttyprxUZuaABWLxWmAKP7fKAJENxx1SpJFR5kFW9grHqEVBA0WjugQcKjiqa8VHFZlo04ZqmsGiM0DPLrFJsKiiSKxTSEQFXsgkw4cUmkDeCeaqG7deEy0VXuCgmbhOKHEQ/iehKckUf3CRbbDqqFKHDiUgZ/wCJJ6q5E0Yi8IkCznKCCHkcJ5FIw4T1/a1kTb8Rkjw40i8IrOX5RjmhVJFQvGSaIuB3QwGaJ55vx+VMptlNCpgbGinW5A54bh6UOPl/FOIrGuimIsuQMxq/EJlxG8XgJkT69lDoT7kAYkbm+kIMah0aEnOFl3dQYVDpBBRBq/EIDiaOslREWXfCsO5YICWavxQ9uoBBeJ5+yQIhv90DAOgArnqF2RWRIFP9lbXiacYoKJNTR0CCDUPSk1wrHWNSiIjNJ9kFAOhuEOXyqkGkD0hZtDaxroqc8Q3i6lAQMd2AQ1hNH4hIEbhCPIptfaLjmgc9X4hItNnpaoLx5bjmm4ij2OaALToNUEGselqZ5JNJoGGSKsNdoNTgY0Do1Qx+oHNPxRTCnf8AtEBDtBiRLq4dGdknbRsN4uOabnCy7vFFOLtSU0vF1opojVx2lvXOCC59t3wpDhQTP1TiOI3ILi/Q+EEO3zqBtAPuOCXiCknBBcXddWJtD7cclDdo2sqQ8Gk2GKDR7nWi9IufWcclDnjiOGaA8R3nBEV9dBNxQ0v1FM7QUOOGoLPxBxHqg0+rRKHAzT3F3dQHtrMUi5p3km/NFWGmec3uTdLr91jFtZv+VcWURj06UoL+qiJ5BBL7cclmXCu74QHis4IKa5wpOKppdW7HuFmCKzrmm1w3ROCC3NdQTeVIlcWJUFw83ylMBTf8oNgx+v2kZU05F82KxDm1uvGaCWah3KDX667+0SiS404d1kC3UP8ApIlupI7oNw13Froqkvn+onXNcf0Qp/HNagMoB5/Tmg2c10d5v+VMkzTnn+1iQyE8fxUiRUcM0HRIfXh8oXP9FWAzQg2+niw+NyYAH3Nu+Eg51qvxDbTqxAOeD9zbv/yguE0+ByUFx81/whr5pyfVuQOIrNxyTabb2olm31IO0No/2QFG/DvBIi0+n4SlGG8+qKJVpvQN8B934jJKA02CJZrxjigbU2nqEExA+AmNoKsArO0Nt4SdtHCee+KBNcOXQIBBm7JeI6FPqgmHG31d0DLRX+I90gBx4YKokUnqZrEhKpOuaAEB949PwmXiH8gehyUkms3pxdxG/sgboGnAqIDiNx91RfCk370F/M9SoF/tgnLgJ3XArMvNZ9RTLjCm9A3OHEbjqlMuFDj6R8KHF1Z9RHslF1JM3m+FRXX8R2KJomc3QUh5t9RTlut6kooDudyRtjcgxrxPuiUafc5oIlGr8ULTxBolNBpJsOuaToVOwUOhxDXVWGVObDVqIbnCo3CrkkBu301Ie3zNv+VMgVhBYHPDJPpq5ZyBxBUBU4c0Cju32zZhNvI+yVG8X/KUgViHNAw6E0CgwoCkbOFIvQNmBSL0Gkjym/4S6YqC0Vi9E3E29BoLRimCKjecll9NbUBo4gg18KzH4SkeU4LMAVtUxEd4wQamFLTyiEnEVG8aqUkDiEEOA4uyDQtAjMbx2SDBVVvd8KPph/IXpQHENdUFlkPt/L4Tmqx+FmXAUgIlCE5GOaBkb/pHqgk0wmkj1DJItm3jXVAAnnE+q0Dhu3er45pwFVzkmtHLDugMbWEVQOpSlxsucO6RcOIYd0EjiGCBSm6cEKoji9kIKY4cOI94LSO6Y3jJYnpge0ys1ydbqkRRMaDeMkhCo4ZIAsxGSQaNQyQVEUsP486kwRwm9uSiAhu6d1UkVe2SAcRvkn8ckpflOGSHmaYA9RkpFcIQt+EFyhS04ZJzVOwyUmruFQ5R6jNAojhP45Ic+bcb25IhZGNqbh5aqeyCI+X+uSbSOHFuScgbpOKZFnsggkVYjJMPhND2yTIFWIWc2iKLQgt20NWIyUyrDe3JEDwx6/CsN8uIyQTyaY/65Ic4cP8AXJIuGiFU02e5QTLFA9sk3GH24jJMCyHUZJbRvlxHtBUSdr5cW5Jlw3yf65I5iHX41FKY1YZIKDhw/wBckpQ4a+HJA3UdP0mGmrVyBOdNu/rkkSB+m5JltleoQRCfdG2buOaKPFFQvbkhLpr0oRFBrdRPZNsP1+lIAok+k5KhDy3EIG6Go5JECbP4QYVMuKGETTC4+8UDm0fhN0Do5IEPLjuUPcPLrqgZI0Tkoc4TfOSp5FTbilND7bJigqSNRyTa0a/SmAHD+SARN/HG5BoGCs66KHMGv0k0iptx1UqJHlxQSGNFeuiqS3Ud9yRcPJ1B3oEPJdBAi0a/SmQKtcoK4CtlxSDRW25yABH6/SqSKjroiI8txSJE/wDD8kAITznBMwm366TqZQpk4qiR5MUExFaURbeT2KTnA0t9KZhWy490EPga8clTJPK/JBIrb6TMEjCtvRqCxCiN5yViTbHmcliD/jZ9MExzZcgolu6J325Kfo0TlyVEitl0eyIigt9MeyCJDKsTkhEq1vo+EINHO1NkiWP3JyR4xpr8p7pjbG0f6hAShZhkkTTv6DktfENZ9I1FQNpqSEEShCHZt25Mkb8lp4ptuCbn/wCU1gQYEizrDJEsCm6GS1O0tNwU+JGl1wQIbQcWIHZKUI7x0kijkn4jq3ekIDjHe70hANfja3/lOVoScky+uV6QlLtNwBQIuG8xjybkqG1Ef/I7JS/M7DNU1xrfcECO0Bqp4P8AlRLn/wDOS1O0M8C64LPxSaTcEAH8usnJDXwq/HJMbQ0k3BXKm3m4IMy6bd/WZIv69G5K2vO6J9IVDaGs+kZoMS+H6FNkOSmI1Dp9q1Ljvibod0O2k38jcEGDtrCu5vZqY2gpjhPgrc8ml1zUmvPEbggjxBqFf+Mypu0Aj8f8qvENZPRo7peKa3YZoH4ghTc3JQdoI098ArG2NZwzSO1NbvxzRUSxV7/8oV+JacM0IK8E1Aqmt8ojd3UBw1FMbQaiPdEajZ2DXVIMohNq1SH7szBOXCG9BRHlN6CLDBZShXqpMbTfOgrabOzH5Q5h4cVB2nLFEvlegsbM8MDzJ7JDZHhOKTncr0p6vyQX4RpboJHZmqCmO9EtBUk8+kUDZHfJhyE6zlDmqiKrigfhGgYJBhq95r0NI0UAisoKa07gFXhzbtXrPxB0tmTDtRPdAyDPGNyUisFDn24qZYmzQMMNRTe2bcFIcNRUF41FBo8Gq5T4RqntFCQcNE9kEjUUFjZEfbgqOzPCLq1jHU/dDTNu6INCw1C7NINPDgPdIu1D4SBs90FeGahcEJdBjkhBoGuqwcqkGoXOWb2nhN8VMk8JwzQbFhoDfyQA6ofksZB4TrqmWnh1eg0g6rByZY7hwdkswyx13ymWGo66oKkOqFzkSHVC491k7Znh1ekWnhN3yg28N1XuMFUl1QPRZQNR11TIdugcc0F+G7hCRa6pvQHsVLWuqPWKbhW03QRDIdU252aQlVC4pQ8hSIdQ12uqKsg1C5IR4QehRIdS03KDszwlBpIM0w9LkwDULj3Cz8M74HBAaav0goh1Q9Lipgd0B6XJSTw6vQGWG75QUWmz0uSaDU30uQWHh1eoLSPtw+UGplWelymS6oXPUeGeHV6Ug0DH5QaFrrLnoku8tzlAaeFy0kO4SgDK8vpcgyofb6SocPK6/wCUGPCepQOUasDkms4O4XXoQUQLTRQrBFZ1NMgPEIfVHrqCQeLUFAA10qTDdEx5ImtvCo9b9yCJqynAVkJ003/KIiooJJEabskGEd5uR9NRwScRUYdNVoKo3m45omjvcNc04iFNe8KQ4W3hBZcBS435pGT5rsykdpYb0y4Tb70EzHiuyKcBW7XVMEQ3G8JhwNd4QT1d290Ei0qiRD7qKQMFJeIbyeZGooADWimBGg4KQ8QpI5hW14tvCCHQNeuqU1t4nxVE2G9NsLVBJhbQiVz6BB5OxUtIpDiqEXUAxvQ2cKpvMhzxD7sckCk1xCIxoN5Tlip2uilrpzM5BRIqOrEdJuU6lzhU65BcKnIokisa6Jo8Ww/khBo/uh24dUkKIRoToHVCFRL+yj590IQV8o2O4oQg0FHMLF1OqEIQJ+8dPZP/AOilCEGjP4rT/wCbd07oQg22e8qNe6EIiNt/LVSj5QhFHwstqhCgwG7qqO4ckIRW2y/j1CQQhVE7PP3SZ/PVZQhRT2ye1zQhAkIQqP/Z');
+
+}
+.rating{
+    background-color:rgba(255, 255, 255, 0.9);
+    padding: 0px 50px;
+    border-radius: 2px;
+    margin-left:50px;
+    width: 1000px;
+}
+.rating hr{
+    
+    border: 2px solid black;
+    opacity: 0.6;
+    padding: 1px;
+    margin-top: -10px;
+    width: 700px;
+    float: left;
+}
+.user{
+    display: inline-flex;
+    font-size: 36px;
+}
+#stars{
+    color: gold;
+    padding-left: 30px;
+
+}
+.avg{
+    margin-top: -35px;
+    font-size: 18px;
+}
+.star-row{
+    display: flex;
+}
+.star{
+    font-size: 28px; 
+    padding-right: 30px;
+}
+.bar-container{
+    width: 500px;
+    margin-top: 8px;
+}
+.bar
+{
+    width: 100%;
+    background-color: rgb(0,0,0,0.1);
+    border-radius: 2px;
+}
+.bar-5 {
+    width: 90%;
+    height: 18px; 
+    background-color:green;
+}
+.bar-4 {
+    width: 94%;
+    height: 18px; 
+    background-color:#2196F3;
+}
+.bar-3 {
+    width: 1%;
+    height: 18px; 
+    background-color:#00bcd4;
+}
+.bar-2 {
+    width: 15%;
+    height: 18px; 
+    background-color:#ff9800;
+}
+.bar-1{
+    width: 5%;
+    height: 18px;
+    background-color: #f44336;
+}
+.user-review textarea{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+
+}
+.review{
+    background-color: white;
+    padding: 10px 50px;
+    margin-left: 50px;
+    width:1000px;
+}
+.c-review hr{
+    width: 700px;
+    float: left;
+}
+.c-review img{
+    width: 20px;
+    height: 20px;
+}
+.c-review p{
+    font-size: 18px;
+}
+.r-comment{
+    display:inline-flex ;
+    
+}
+#comment{
+    padding-top: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    font-size: 24px;
+}
+#r-star{
+    background-color: green;
+    margin-right: 10px;
+    border-radius: 2px;
+    color: white;
+    padding: 1px;
+    font-size: 24px;
+}
+#all{
+    font-size: 20px;
+    color: dodgerblue;
+}
+#all:hover{
+    cursor: pointer;
+}
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    height: 250px;
+    align-items: center;
+    background-image: url('/images/footerimg.jpg');
+    background-color:rgba(116, 121, 50, 0.7);
+}
+
+.footer li {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+
+@media(max-width:1400px){
+    .container{
+        margin: auto;
+        margin-top: 20px;
+    }
+
+}
+@media(max-width:1100px){
+    .container{
+        margin: auto;
+        margin-top: 20px;
+    }
+    .main, .review,.rating{
+        margin: auto;
+    }
+}
+@media(max-width:1000px){
+    .container{
+        margin: auto;
+        margin-top: 20px;
+    }
+    .main{
+        width: 900px;
+        margin: auto;
+    }
+    .rating ,.review{
+        width: 900px;
+    }
+}
+/* Medai Query */
+
+@media only screen and (max-width:1199px) {
+    #prof2{
+        display: none;
+    }
+    .testimonial{
+        width: 800px;
+    }
+}
+@media only screen and (max-width:1050px){
+    .nav-content{
+        width: 85%;
+    }
+    .nav-content1{
+        width: 85%
+    }
+    #Search-box{
+        width: 300px;
+        font-size: x-small;
+    }
+    .usp{
+        width: 80vw;
+    }   
+    .usp p{
+        margin-left: 50px;
+    }
+    .organic{
+        width: 90vw;
+    }
+    .combo-boxes{
+        width: 80vw;
+        height: 650px;
+    }
+    #poster{
+        width: 200px;
+        height: 200px;
+    }
+
+    .Card-front{
+        width: 250px;
+        height: 250px;
+    }
+    .Card-back{
+        width: 250px;
+        height: 250px;
+    }
+    .Card-back p{
+        font-size: 15px;
+        width: 150px;
+        margin: auto;
+    }
+    .deal-cards{
+        width: 200px;
+        height: 200px;
+    }
+    #s1{
+        display: none;
+    }
+    #s3{
+        display: none;
+    }
+    .todays-deals{
+        width: 98vw;
+    }
+    .today-deals-listing{
+        width: 98vw;
+    }
+}
+@media  (max-width: 1000px) {
+    .usp p{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .usp{
+        border-radius: 50px 0px 0px 0px;
+    }
+    #Join-the-movement{
+        padding: 10px;
+        font-size: 16px;
+    }
+    .organic p{
+        font-size: 16px;
+    }
+    .organic-btn{
+        padding: 10px;
+        font-size: 16px;
+    }
+    #farmer{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+    #Buy-Now{
+        padding: 10px;
+        font-size: 16px;
+        margin: auto;
+    }
+    .organic{
+        width: 95%;
+    }
+    #organic-img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .Card-front{
+        width: 200px;
+        height: 250px;
+    }
+    .Card-back{
+        width: 200px;
+        height: 250px;
+    }
+    .deal-cards{
+        width: 150px;
+        height: 150px;
+    }
+    .todays-deals{
+        height: 275px;
+    }
+}
+@media (max-width: 896px){
+    #s2{
+        object-fit:contain;
+        width: 100vw;
+        height: min-content;
+    }
+    .deal-cards{
+        width: 125px;
+        height: 125px;
+    }
+}
+@media (max-width: 800px){
+    #prof1{
+        display:none;
+    }
+    .testimonial{
+        width: 75vw;
+    }
+    .combo-boxes{
+        height: 600px;
+    }
+    .Card-container{
+        height: 250px;
+       }
+}
+@media (max-width: 900px){
+    #Search-box{
+        width: 250px;
+    }
+    .nav-content{
+        width: 95%;
+    }
+    .nav-content1{
+        width: 95%;
+    }
+}
+@media (max-width: 700px){
+    #Sign-Up{
+        padding: 10px;
+        font-size: small;
+    }
+    #Login{
+        padding: 10px;
+        font-size: small;
+    }
+    .today-deals-listing{
+        height: 180px;
+    }
+    .nav-content{
+        width: 98%;
+    }
+    .nav-content1{
+        width: 98%;
+        font-size: small;
+    }
+}
+@media (max-width: 650px){
+    .footer{
+        flex-direction: column;
+        height: max-content;
+    }
+    .footer ul{
+        margin-top: 20px;
+    }
+    #Sign-Up{
+        display:none;
+    }
+    #Login{
+        display: none;
+    }
+    #signupAndLogin{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        width: 35px;
+        background-color: rgb(247, 96, 9);
+        color: white;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .lastone{
+        display: none;
+    }
+    .contactus{
+        display: flex;
+        width: 230px;
+        justify-content: flex-start;
+        /* margin: auto; */
+    }
+    .enquiries{
+        display: flex;
+        width: 230px;
+        justify-content: flex-start;
+        /* margin: auto; */
+    }
+    .about-us{
+        display: flex;
+        width: 230px;
+        justify-content: flex-start;
+        /* margin: auto; */
+    }
+    .footer ul{
+        padding: 0px;
+    }
+    .usp p{
+        line-height: 30px;
+    }
+    .organic p{
+        line-height: 30px;
+    }
+    #farmer{
+        width: 250px;
+    }
+    .txt-header{
+        font-size: 18px;
+    }
+    .sub-heading{
+        font-size: 14px;
+    }
+}
+@media (max-width: 750px){
+    .combo-boxes{
+        height: 850px;
+    }
+}
+@media (max-width: 550px){
+    #Search-box{
+        width: 200px;
+        font-size: 10px;
+        background-image: none;
+    }
+    .usp p {
+        line-height: 25px;
+    }
+    #organic-img{
+        width: 200px;
+    }
+    .combo-boxes{
+        width: 95%;
+    }
+    .testimonial{
+        width: 90vw;
+    }
+}
+@media (max-width: 500px){
+    #Search-box{
+        display: none;
+    }
+    #search-icon{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        position:relative;
+        left: 50px;
+        border-radius: 10px;
+        background-color: white;
+        cursor: pointer;
+    }
+    #city{
+        position: relative;
+        left: 40px;
+        flex-shrink: 0;
+    }
+    #cart{
+        position: relative;
+        left: 15px;
+    }
+    .usp{
+        display: none;
+    }
+    .organic{
+        display: none;
+    }
+    .todays-deals{
+        height: 450px;
+    }
+    .lastone{
+        display: inline-block;
+    }
+    .today-deals-listing{
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 450px){
+    .Card-front{
+        width: 175px;
+        height: 210px;
+    }
+    .Card-back{
+        width: 175px;
+        height: 210px;
+        font-size: 16px;
+    }
+    .nav-content{
+        width: 100%;
+    }
+    #poster{
+        width: 150px;
+        height: 150px;
+    }
+    .nav-content1 a{
+        display: none;
+    }
+    #ham{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background-color: white;
+        position: absolute;
+        right: 0;
+    }
+    .nav-content{
+        height: 60px;
+    }
+    #ham:active{
+        background-color: rgb(110, 108, 108);
+    }
+    .nav-bar1 a{
+        margin-top: 20px;
+    }
+    .testimonial{
+        width:99%;
+    }
+    #prev{
+        width: 25px;
+        height: 25px;
+    }
+    #next{
+        width: 25px;
+        height: 25px;
+    } 
+    #testimonial-prev{
+        width: 20px;
+        height: 20px;
+    }
+    #testimonial-next{
+        width: 20px;
+        height: 20px;
+    }
+    #search-icon{
+        left: 25px;
+    }
+    #city{
+        left: 15px;
+    }
+    #cart{
+        left: 5px;
+    }
+    #explore{
+        display: inline-block;
+        font-size: large;
+    }
+}
+@media (max-width: 400px){
+    .Card-front{
+        width: 150px;
+        height: 210px;
+        font-size: small;
+    }
+    .Card-back{
+        width: 150px;
+        height: 210px;
+        font-size: small;
+    }
+}

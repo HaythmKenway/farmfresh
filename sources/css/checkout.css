@@ -1,0 +1,132 @@
+
+*{  margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: url(/images/bg.jpg); */
+    font-family:arial;
+    font-size:17px;
+    padding:8px;
+}
+h2{
+    text-align: center;
+    margin:10px;
+
+}
+h3{
+    text-align: center;
+    margin:10px;
+
+}
+h4{
+    margin:10px;
+
+}
+
+.row{
+    display: -ms-flexbox ;
+    display:flex;
+    flex-wrap: wrap; 
+    -ms-flex-wrap: wrap;
+}
+
+.col-25{
+    -ms-flex:25% ;
+    flex=25%;
+}
+.col-50{
+    width:450px;
+    -ms-flex:30% ;
+    flex=30%;
+}
+.col-75{
+    -ms-flex:60% ;
+    flex=60%;
+}
+
+.col-25,.col-50,.col-75{
+    padding: 0 16px;
+}
+.container{
+    display:flex;
+    background-color: rgb(245, 245, 245);
+    padding: 3px 18px 13px 18px;
+    border-radius: 3px;
+}
+input[type=email],input[type=text]{
+    width:85%;
+    margin-bottom:20px;
+    padding:12px;
+    border:1px solid white;
+    border-radius: 3px;
+}
+
+label{
+    margin-bottom: 10px;
+    display:block;
+}
+.icon-container{
+    display:flex;
+    width: 25%;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    padding:7px 0px;
+    font-size:24px;
+}
+.btn{
+    background-color: forestgreen;
+    color: white;
+    padding:12px;
+    border :none;
+    border-radius: 3px;
+    width:100%;
+    cursor:pointer;
+    font-size:17px;
+}
+.btn:hover{
+    background-color: lawngreen;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+span.price{
+    float: right;
+    color: gray;
+}
+.chandru{
+    /* height ethanum */
+    display: flex;
+    background-color: rgb(245, 245, 245);
+    padding: 3px 18px 13px 18px;
+    flex-direction: column;
+    width:300px;   
+    border-radius: 5px;
+}
+@media(max-width:800px){
+
+    body{
+        margin:0px;
+    }
+    .row{
+        flex-direction: column-reverse;
+    }
+    .col-25{
+        margin-bottom:20px;
+    }
+    h2{
+        text-align: left;
+        margin:10px;
+    .container{
+        
+        margin:0px;
+        width=100vw;
+        
+    }
+    .chandru{
+        margin:0px;
+        width:500px;   
+
+    }
+}
