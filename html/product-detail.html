@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/static/images/logo3.png" >
+    <link href='/static/sources/css/product-detail.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Source+Sans+Pro:wght@200&display=swap">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- nav bar starts -->
+    <div class="nav-bar">
+        <div class="nav-content">
+            <a href="/"><img src="/static/images/logo1.png" alt="logo" id="logo"></a>
+            <input type="text" id="Search-box" placeholder="Search for veggies, fruits, dairy and much more" onkeyup="search()">
+            <!-- search -->
+            <!-- </span></i> -->
+            <button id='search-icon'><span class="material-icons-outlined" id="glass">search</span></button>
+            <select id='city'>
+                <option value="Chennai">Chennai</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Delhi">Delhi</option>
+            </select>
+            <button id="cart"><span class="material-icons-outlined">
+                    shopping_cart
+                </span></button>
+            <button id="signupAndLogin">
+                <span class="material-icons">
+                    person
+                </span></button>
+            <button id="Sign-Up">Sign Up</button>
+            <button id="Login">Login</button>
+        </div>
+    </div>
+    <!-- nav bar ends -->
+
+    <!-- nav bar 1 starts -->
+    <div class="nav-bar1">
+        <button id="ham" onclick="hamOpen()"><span class="material-icons-outlined">
+                menu
+            </span></button>
+        <div class="nav-content1" id="nav-con1">
+            <span id="explore">
+                Explore our products
+            </span>
+            <a href="#">
+                <li>Combo Box</li>
+            </a>
+            <a href="#">
+                <li>Vegetables</li>
+            </a>
+            <a href="#">
+                <li>Fruits</li>
+            </a>
+            <a href="#">
+                <li>Dairy</li>
+            </a>
+            <a href="#">
+                <li>Nuts</li>
+            </a>
+            <a href="#">
+                <li>Spices</li>
+            </a>
+            <a href="#">
+                <li>Pulses</li>
+            </a>
+            <a href="#">
+                <li>Cereal</li>
+            </a>
+        </div>
+    </div>
+    <!-- nav bar 1 ends -->
+    <div class='flex-container'>
+        <img src='{{product.Product_Image.url}}' alt='capcicum' id="poster">
+        <div class="description">
+            <h1>{{product.Product_Name | title}}</h1>
+            <span id='offer-txt'>Special Offer ends in 20h 10m 90s</span>
+            <span id='highlight'>&#8377 {{product.Product_Price}}</span>
+            <span id="rating">4.0<span class="material-icons-outlined" id='star'>
+                    star
+                </span></span>
+            <span>197 reviews and 27 ratings</span>
+            <div class="buttons-mobile">
+                <a href = '/cart'><button id="AddToCart" >Add to cart</button></a>
+                <button id="BuyNow">Buy Now</button>
+            </div>
+            <span>Available Offers:</span>
+            <span class='offer'>
+                <span class="material-icons-outlined pricetag">
+                    local_offer
+                </span> Buy 2kg and get 20% off
+            </span>
+            <span class='offer'><span class="material-icons-outlined pricetag">
+                    local_offer
+                </span> Pay with Phonepe and get flat 100 rupees off</span>
+            <span class='offer'><span class="material-icons-outlined pricetag">
+                    local_offer
+                </span>Flat 10% off on purchase using Hdfc Bank</span>
+            <div class="buttons">
+                <a href="/cart"><button id="AddToCart">Add to cart</button></a>
+                <a href="/checkout"><button id="BuyNow">Buy Now</button></a>
+            </div>
+            <a href = '/farmerprofile'><button id="fprofile">Check Farmer Profile</button></a>
+        </div>
+    </div>
+    <!--Footer starts here-->
+    <div class="footer">
+        <div class="contactus">
+            <ul type=none>
+                <li><a>Contact Us</a></li>
+                <li><a>+91 9999988888</a></li>
+                <li><a>enquiries@farmfresh.com</a></li>
+            </ul>
+        </div>
+        <div class='enquiries'>
+            <ul type='none'>
+                <li><a>Payment and Billing</a></li>
+                <li><a>Returns</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Customer Forum</a></li>
+            </ul>
+        </div>
+        <div class='about-us'>
+            <ul type='none'>
+                <li><a>About Us</a></li>
+                <li><a>Work with Us</a></li>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms and Conditions</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Footer End-->
+<script src="/static/sources/javascript/search.js"></script>
+</body>
+</html>
