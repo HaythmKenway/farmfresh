@@ -3,6 +3,7 @@ from .models import ComboBox, CustomerProfile, ProductDetail, Cart
 from django.contrib.auth.models import auth, User
 from django.contrib import messages
 from django.utils.html import strip_tags
+
 # Create your views here.
 
 name = ''
@@ -10,7 +11,13 @@ name = ''
 
 def index(request):
     global name
-    return render(request, 'index.html', {'name': name})
+    response = render(request, 'index.html', {'name': name})
+    try:
+        cart = request.COOKIES['cart']
+        print(cart)
+    except(KeyError):
+        response.set_cookie('cart', '')
+    return response
 
 
 def signup(request):
@@ -71,14 +78,43 @@ def detail(request, Pname):
     product = ProductDetail.objects.get(Product_Name=Pname)
     return render(request, 'product-detail.html', {'product': product})
 
+
 def cart(request):
-    return render(request, 'cart.html')
+    ref = request.META['HTTP_REFERER']
+    cart = request.COOKIES['cart']
+    cart_items = []
+    total_price = 0
+    if 'detail' in ref:
+        if cart != '' and ref.split('/')[-1] not in cart:
+            cart += ',' + ref.split('/')[-1]
+        elif cart == '':
+            cart = ref.split('/')[-1]
+        for item in cart.split(','):
+            try:
+                cart_items.append(ProductDetail.objects.get(Product_Name=item))
+                price = 0
+                for charecter in cart_items[-1].Product_Price:
+                    if charecter.isdigit():
+                        price = price * 10 + int(charecter)
+                print(price)
+                total_price += price
+                print(total_price)
+            except(ProductDetail.DoesNotExist):
+                break
+    if cart_items == []:
+        cart_items = None
+    response = render(request, 'cart.html', {'cart_items': cart_items, 'total_price': total_price})
+    response.set_cookie('cart', cart)
+    return response
+
 
 def checkout(request):
     return render(request, 'checkout.html')
 
+
 def farmerprofile(request):
     return render(request, 'farmer-profile.html')
+
 
 def listproducts(request):
     return render(request, 'product-list.html')

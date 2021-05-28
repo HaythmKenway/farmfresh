@@ -438,7 +438,7 @@ body {
 /*today's deals starts*/
 .todays-deals {
     display: block;
-    height: 375px;
+    height: 400px;
     width: 1050px;
     margin: auto;
 }
@@ -586,13 +586,14 @@ body {
     z-index: 99;
     background-color: white;
     height:max-content;
-    padding-left: 10px;
 }
 #Search-boxautocomplete-list div{
     margin-bottom: 5px;
     width: 100%;
     height: 25px;
     cursor: pointer;
+    padding-left: 10px;
+    box-sizing: border-box;
 }
 
 #Search-boxautocomplete-list div:hover, focus{
