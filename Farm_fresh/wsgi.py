@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Farm_fresh.Farm_fresh.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Farm_fresh.settings')
 
 application = get_wsgi_application()
