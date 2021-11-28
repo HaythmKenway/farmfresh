@@ -9,7 +9,7 @@ html {
     padding: 0px;
 }
 body {
-    background-image: url("../images/farmbg.jpg");
+    background-image: url("/static/images/farmbg.jpg");
     margin:0px;
     padding: 0px;
     font-family: 'montserrat','sans-serif';
@@ -23,7 +23,7 @@ body {
 .container {
     height:90vh;
     width:80vw;
-    background-image: url("../images/bg.jpg");
+    background-image: url("/static/images/bg.jpg");
     background-color:  rgb(44, 219, 149);
     border-radius: 20px;
     display:flex;
