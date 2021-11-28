@@ -1,1 +1,1 @@
-web: gunicorn Farm_fresh.wsgi
+web: gunicorn Farm_fresh.wsgi:app
