@@ -23,7 +23,7 @@ body {
 .container {
     height:90vh;
     width:80vw;
-    background-image: url("images\bg.jpg");
+    background-image: url("images/bg.jpg");
     background-color:  rgb(44, 219, 149);
     border-radius: 20px;
     display:flex;

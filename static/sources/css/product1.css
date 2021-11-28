@@ -197,7 +197,7 @@ h5:nth-child(3){
         padding: 0px;
     }
     body {
-        background-image: url("/images/farmbg.jpg");    
+        background-image: url("./images/farmbg.jpg");
         margin:0px;
         padding: 0px;
         font-family: 'montserrat','sans-serif';
@@ -211,7 +211,7 @@ h5:nth-child(3){
     .container {
         height:90vh;
         width:80vw;
-        background-image: url("images\bg.jpg");
+        background-image: url("./images/bg.jpg");
         background-color: rgb(255, 255, 255);
         border-radius: 20px;
         display:flex;
