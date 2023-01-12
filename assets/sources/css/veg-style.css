@@ -1,0 +1,119 @@
+body{
+    margin: 0px;
+    box-sizing: border-box;
+    background-image: url('https://www.wallpaperwarehouse.com/upload_media/product/preview/1462467589RAKBVUHS_1462467589.jpg');
+
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: blueviolet;
+}
+.carousel{
+    width: 100%;
+    background-image: url('https://cdn.shopify.com/s/files/1/0512/7602/1947/files/vegetable_2_small_03c5039a-5cff-4f10-bad0-d65c5a207bbf_1920X.jpg?v=1613223748');
+    height: 500px;
+    object-fit: cover;
+
+} 
+.overlay{
+    background-color: rgb(0, 0, 0,0.5);
+    width: 100%;
+    text-align: center;
+    position:absolute;
+    top: 55%;
+    padding: 10px 0;
+    color: white;
+}
+.overlay h1{
+    font-size: 42px;
+}
+.overlay p{
+    font-size: 28px;
+} 
+.header{
+    display: flex;
+    background-position: center;
+    margin-left: 180px;
+    margin-right: 180px;
+    border-bottom: 2px solid black;
+    margin-bottom:30px;
+    }
+.header h1{
+    padding:10px ;
+}
+.header select{
+    position: relative;
+    left: 600px;
+    top: 40px;
+    border: none;
+    border-left: 2px solid black;
+    font-size: 20px;
+    background: none;
+    
+}
+#filter-2{
+    border-right: 2px solid black;
+}
+.header select:hover{
+    cursor: pointer;
+}
+
+.img-block img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    content: attr(data-text);
+    display: block;
+}
+.row-1{
+    display: flex;
+    justify-content: center;
+}
+#veg{
+    font-weight: 600;
+}
+
+.img-block{
+    padding: 15px;
+    background-color:rgb(255, 255, 255,0.7);
+    height: 270px; 
+    margin-left: 20px;
+    border-bottom: 8px solid rgba(0, 128, 0, 0.822);    
+    border-top: 8px solid  rgba(0, 128, 0, 0.822);
+
+}
+#card-2{
+    border-top: 8px solid rgb(100, 7, 100);
+    border-bottom: 8px solid rgb(100, 7, 100);
+} 
+#card-3{
+    border-top: 8px solid rgb(44, 121, 199);
+    border-bottom: 8px solid rgb(44, 121, 199);
+} 
+#card-4{
+    border-top: 8px solid orangered;
+    border-bottom: 8px solid orangered;
+} 
+.img-block:hover{
+    transform: scale(1.05,1.05); 
+
+} 
+.cart{
+    background-color: rgb(250, 213, 49);
+    text-align: center;
+    font-size: 22px;
+    position: relative;
+    margin-top: 20px;
+    color: white;
+   
+}
+.cart:hover{
+    cursor: pointer;
+}
+.text{
+    margin-top: -1px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 3px;
+}

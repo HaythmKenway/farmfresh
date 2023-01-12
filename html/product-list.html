@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable list</title>
+    <link rel="stylesheet" href="/static/sources/css/veg-style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" type="image/x-icon" href="/static/images/logo3.png">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Source+Sans+Pro:wght@200&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+<!-- nav bar starts -->
+<div class="nav-bar">
+    <div class="nav-content">
+        <a href="/"><img src="/static/images/logo1.png" alt="logo" id="logo"></a>
+        <input type="text" id="Search-box" placeholder="Search for veggies, fruits, dairy and much more">
+        <!-- search -->
+        <!-- </span></i> -->
+        <button id='search-icon'><span class="material-icons-outlined" id="glass">search</span></button>
+        <select id='city'>
+            <option value="Chennai">Chennai</option>
+            <option value="Banglore">Banglore</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Lucknow">Lucknow</option>
+            <option value="Delhi">Delhi</option>
+        </select><a href="/sources/html/cart.html">
+        <button id="cart"><span class="material-icons-outlined">
+                        shopping_cart
+                    </span></button>
+    </a>
+        <button id="signupAndLogin">
+                    <span class="material-icons">
+                        person
+                    </span></button>
+        <a href="sources/html/Signup.html">
+            <button id="Sign-Up">Sign Up</button>
+        </a>
+        <a href="sources/html/login.html">
+            <button id="Login">Login</button>
+        </a>
+    </div>
+</div>
+<!-- nav bar ends -->
+
+<!-- nav bar 1 starts -->
+<div class="nav-bar1">
+    <button id="ham" onclick="hamOpen()"><span class="material-icons-outlined">
+                    menu
+                </span></button>
+    <div class="nav-content1" id="nav-con1">
+                <span id="explore">
+                    Explore our products
+                </span>
+        <a href="#">
+            <li>Combo Box</li>
+        </a>
+        <a href="#">
+            <li>Vegetables</li>
+        </a>
+        <a href="#">
+            <li>Fruits</li>
+        </a>
+        <a href="#">
+            <li>Dairy</li>
+        </a>
+        <a href="#">
+            <li>Nuts</li>
+        </a>
+        <a href="#">
+            <li>Spices</li>
+        </a>
+        <a href="#">
+            <li>Pulses</li>
+        </a>
+        <a href="#">
+            <li>Cereal</li>
+        </a>
+    </div>
+</div>
+<!-- nav bar 1 ends -->
+
+
+<div class="carousel">
+    <div class="overlay"><h1>FRESH FROM THE FARM</h1>
+        <p> We deliver organic fruits & vegetables fresh from our fields to your doorstep.</p></div>
+</div>
+<div class="container">
+    <div class="header">
+        <div class="content"><h1>VEGETABLES</h1></div>
+        <div class="filter">
+            <select name="" id="filter-1">
+                <option value="">---Filter by---</option>
+                <option value="">By price</option>
+                <option value="">By rating</option>
+                <option value="">By preference</option>
+            </select>
+            <select name="" id="filter-2">
+                <option value="">---Regular---</option>
+                <option value="">Seasonal</option>
+                <option value="">Exotic</option>
+                <option value="">Continental</option>
+            </select>
+        </div>
+    </div>
+    <div class="veg-list">
+        <div class="row-1">
+            <div class="img-block" id="card-1">
+                <img src="https://www.wallpaperflare.com/static/29/673/262/tomato-lot-vegetable-food-wallpaper.jpg"
+                     alt="">
+                <div class="text"><p id="veg">Tomatoes</p>
+                    <p>Rs.30/Kg</p>
+                </div>
+                <div class="cart"><p>Add to cart</p></div>
+            </div>
+            <a href="/detail/carrot">
+                <div class="img-block" id="card-2">
+                    <img src="https://wallpapercave.com/wp/wp2378901.jpg" alt="">
+                    <div class="text"><p id="veg">Carrot</p>
+                        <p>Rs.100/Kg</p>
+                    </div>
+                    <div class="cart"><p>Add to cart</p></div>
+                </div>
+            </a>
+            <div class="img-block" id="card-3">
+                <img src="https://img1.exportersindia.com/product_images/bc-full/dir_152/4559472/fresh-cauliflower-1508739725-3410166.jpeg"
+                     alt="">
+                <div class="text"><p id="veg">Cauliflower</p>
+                    <p>Rs.60/Kg</p>
+                </div>
+                <div class="cart"><p>Add to cart</p></div>
+            </div>
+            <div class="img-block" id="card-4">
+                <img src="https://wallpaperaccess.com/full/195479.jpg" alt="">
+                <div class="text"><p id="veg">Pumpkin</p>
+                    <p>Rs.10/Kg</p>
+                </div>
+                <div class="cart"><p>Add to cart</p></div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="veg-list">
+        <div class="row-1">
+            <div class="img-block" id="card-1">
+                <img src="https://www.wallpaperflare.com/static/29/673/262/tomato-lot-vegetable-food-wallpaper.jpg"
+                     alt="">
+                <div class="text"><p id="veg">Tomatoes</p>
+                    <p>Rs.30/Kg</p>
+                </div>
+                <div class="cart"><p>Add to cart</p></div>
+            </div>
+            <div class="img-block" id="card-2">
+                <img src="https://wallpapercave.com/wp/wp2378901.jpg" alt="">
+                <div class="text"><p id="veg">Carrot</p>
+                    <p>Rs.100/Kg</p>
+                </div>
+                <div class="cart"><p>Add to cart</p></div>
+            </div>
+            <div class="img-block" id="card-3">
+                <img src="https://img1.exportersindia.com/product_images/bc-full/dir_152/4559472/fresh-cauliflower-1508739725-3410166.jpeg"
+                     alt="">
+                <div class="text"><p id="veg">Cauliflower</p>
+                    <p>Rs.60/Kg</p>
+                </div>
+                <div class="cart"><p>Add to cart</p></div>
+            </div>
+            <div class="img-block" id="card-4">
+                <img src="https://wallpaperaccess.com/full/195479.jpg" alt="">
+                <div class="text"><p id="veg">Pumpkin</p>
+                    <p>Rs.10/Kg</p>
+                </div>
+                <div class="cart"><p>Add to cart</p></div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="veg-list">
+        <div class="row-1">
+            <div class="img-block" id="card-1">
+                <img src="https://www.wallpaperflare.com/static/29/673/262/tomato-lot-vegetable-food-wallpaper.jpg"
+                     alt="">
+                <div class="text"><p id="veg">Tomatoes</p>
+                    <p>Rs.30/Kg</p>
+                </div>
+                <div class="cart"><p>Add to cart</p></div>
+            </div>
+            <div class="img-block" id="card-2">
+                <img src="https://wallpapercave.com/wp/wp2378901.jpg" alt="">
+                <div class="text"><p id="veg">Carrot</p>
+                    <p>Rs.100/Kg</p>
+                </div>
+                <div class="cart"><p>Add to cart</p></div>
+            </div>
+            <div class="img-block" id="card-3">
+                <img src="https://img1.exportersindia.com/product_images/bc-full/dir_152/4559472/fresh-cauliflower-1508739725-3410166.jpeg"
+                     alt="">
+                <div class="text"><p id="veg">Cauliflower</p>
+                    <p>Rs.60/Kg</p>
+                </div>
+                <div class="cart"><p>Add to cart</p></div>
+            </div>
+            <div class="img-block" id="card-4">
+                <img src="https://wallpaperaccess.com/full/195479.jpg" alt="">
+                <div class="text"><p id="veg">Pumpkin</p>
+                    <p>Rs.10/Kg</p>
+                </div>
+                <div class="cart"><p>Add to cart</p></div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="veg-list">
+        <div class="row-1">
+            <div class="img-block" id="card-1">
+                <img src="https://www.wallpaperflare.com/static/29/673/262/tomato-lot-vegetable-food-wallpaper.jpg"
+                     alt="">
+                <div class="text"><p id="veg">Tomatoes</p>
+                    <p>Rs.30/Kg</p>
+                </div>
+                <div class="cart"><p>Add to cart</p></div>
+            </div>
+            <div class="img-block" id="card-2">
+                <img src="https://wallpapercave.com/wp/wp2378901.jpg" alt="">
+                <div class="text"><p id="veg">Carrot</p>
+                    <p>Rs.100/Kg</p>
+                </div>
+                <div class="cart"><p>Add to cart</p></div>
+            </div>
+            <div class="img-block" id="card-3">
+                <img src="https://img1.exportersindia.com/product_images/bc-full/dir_152/4559472/fresh-cauliflower-1508739725-3410166.jpeg"
+                     alt="">
+                <div class="text"><p id="veg">Cauliflower</p>
+                    <p>Rs.60/Kg</p>
+                </div>
+                <div class="cart"><p>Add to cart</p></div>
+            </div>
+            <div class="img-block" id="card-4">
+                <img src="https://wallpaperaccess.com/full/195479.jpg" alt="">
+                <div class="text"><p id="veg">Pumpkin</p>
+                    <p>Rs.10/Kg</p>
+                </div>
+                <div class="cart"><p>Add to cart</p></div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+
+</div>
+<div class="footer">
+    <div class="contactus">
+        <ul type=none>
+            <li><a>Contact Us</a></li>
+            <li><a>+91 9999988888</a></li>
+            <li><a>enquiries@farmfresh.com</a></li>
+        </ul>
+    </div>
+    <div class='enquiries'>
+        <ul type='none'>
+            <li><a>Payment and Billing</a></li>
+            <li><a>Returns</a></li>
+            <li><a>FAQ</a></li>
+            <li><a>Customer Forum</a></li>
+        </ul>
+    </div>
+    <div class='about-us'>
+        <ul type='none'>
+            <li><a>About Us</a></li>
+            <li><a>Work with Us</a></li>
+            <li><a>Privacy Policy</a></li>
+            <li><a>Terms and Conditions</a></li>
+        </ul>
+    </div>
+</div>
+<!--Footer End-->
+
+
+</body>
+</html>

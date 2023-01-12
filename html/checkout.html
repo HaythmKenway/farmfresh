@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/static/images/logo3.png" >
+    <script src="https://kit.fontawesome.com/2dc5a991d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/sources/css/checkout.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <h2><i class="fas fa-shopping-cart"></i>Cart checkout</h2>    
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form>
+                    <div class="row">
+                        <div class="col-50">
+                            <h3><i class="fas fa-map-marker-alt"></i> Billing Address</h3>
+                            <hr>
+                            <label for="fname"><i class="fas fa-user"></i> Full Name:</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Johnny">
+                           
+                            
+                            <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                            <input type="email" id="email" name="email" placeholder="jhonnysilverhand@john.web">
+                            
+                            <div class="address">
+                                
+                                <label for="address"><i class="far fa-address-card"></i> Address:</label>
+                                <input type="text" id="address" name="addressl1" placeholder="Address line 1">
+                                <input type="text" id="address" name="addressl2" placeholder="Address line 2">
+                                <input type="text" id="address" name="addressl3" placeholder="Address line 3">
+                                
+                                
+                                <label for="city"><i class="fa fa-institution"></i> locality:</label>
+                                <input type="text" id="city" name="city" placeholder="City/Town">
+                                <input type="text" id="city" name="city" placeholder="State">
+                                
+                                <label for="Pin code"><i class="fas fa-thumbtack"></i> Pin Code:</label>
+                                <input type="text" id="pin" name="pin" placeholder="pin">
+                                        
+                                    
+
+                            </div>
+                        </div>
+                        
+                        <div class="col-50">
+                            <h3>Payment</h3>
+                            <hr>
+                            <lable for="fname">Accepted here</lable>
+                            <div class="icon-container">
+                                <i class="fab fa-cc-visa" style="color:navy;"></i>
+                                <i class="fab fa-cc-mastercard"style="color: red;"></i>
+                                <i class="fab fa-cc-paypal"style="color:blue;"></i>
+                            </div>
+                            <label for="cname"> Name on card:</label>
+                            <input type="text" id="cname" name="cardnumber" placeholder="johnnysilverhand">
+                        
+                            <label for="cnum"> Card number:</label>
+                            <input type="text" id="cname" name="cardnum" placeholder="1111-2222-3333-4444">
+                            
+                           
+                            <label for="Expmonth"> Exp:</label>
+                            <input type="text" id="Exp" name="cardnum" placeholder="12/25">
+                            
+                            <label for="cvv"> cvv:</label>
+                            <input type="text" id="cvv" name="cardnum" placeholder="***">
+                
+        
+                            <label>
+                                <input type="checkbox" checked="checked" name="checkbox">Shipping address same as billing address
+        
+                            </label>
+                            <label>
+                                <input type="checkbox" checked="checked" name="checkbox">Save details for future transactions.
+        
+                            </label>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+            <input type="submit" value="Proceed to pay" class="btn">
+        </div>
+        <div class="col-25">
+            <div class="chandru">
+                <div class="concol">
+
+                    <h4>Cart<span class="price" style="color": black><i class="fas fa-shopping-cart"></i></span></h4>
+                    <hr>
+                    <div>
+                        <p><a href="#">Tomatoes</a><span class="price">100</span></p>
+                                        </div>
+                    <div>
+                        <p><a href="#">potatoes</a><span class="price">200</span></p>
+                    </div>
+                    <div>
+                        <p><a href="#">cabbage</a><span class="price">300</span></p>
+                    </div>
+                    <div>
+                        <p><a href="#">fruit and nuts</a><span class="price">400</span></p>
+                    </div>
+                    <hr>
+                    <p>Total<span class="price style="color:black;"><b>600</b></span></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

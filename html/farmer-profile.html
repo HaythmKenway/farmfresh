@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="/static/sources/css/profile-style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" type="image/x-icon" href="/static/images/logo3.png" >
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Source+Sans+Pro:wght@200&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+        <!-- nav bar starts -->
+        <div class="nav-bar">
+            <div class="nav-content">
+                <a href = '/'><img src="/static/images/logo1.png" alt="logo" id="logo"></a>
+                <input type="text" id="Search-box" placeholder="Search for veggies, fruits, dairy and much more">
+                <!-- search -->
+                <!-- </span></i> -->
+                <button id='search-icon'><span class="material-icons-outlined" id="glass">search</span></button>
+                <select id='city'>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Banglore">Banglore</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Delhi">Delhi</option>
+                </select><a href="/cart">
+                <button id="cart"><span class="material-icons-outlined">
+                        shopping_cart
+                    </span></button></a>
+                <button id="signupAndLogin">
+                    <span class="material-icons">
+                        person
+                    </span></button>
+                    <a href="/signup">
+                        <button id="Sign-Up">Sign Up</button></a>
+                        <a href="/login">
+                <button id="Login">Login</button></a>
+            </div>
+        </div>
+        <!-- nav bar ends -->
+
+    <div class="container">
+        <div class="main">
+            <div class="block">
+                <div class="image">
+                    <img src="https://thumbs.dreamstime.com/b/indian-rural-farmer-19791729.jpg" alt="">
+                </div>
+                <div class="user-1">
+                    <p id="stars-1">★★★★★</p>
+               </div>
+            </div>
+            <div class="block">
+                <div class="info">
+                    <h1>Sanjay Sharma</h1>
+                    <p id="occ">Farmer</p>
+                    <p>Location: Thiruchirapalli <br>
+                        Contact: 99278728321 <br>
+                        Product-Sold: Tomato,Onion,Banana</p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="btn"><button id="share">Share Now</button></div>
+            </div>
+        </div> <br>
+        <div class="row">
+            <div class="header"><h1>Dash Board</h1></div></div>
+            <div class="r-block">
+                <div class="row-1">
+                    <div class="r-image">
+                        <img src="https://conceptdraw.com/a2068c3/p2/preview/640/pict--line-graph-(control-dots)-line-graphs-vector-stencils-library" alt="">
+                        <div class="text" id="sale">Overall Sale</div>
+                    </div>
+                </div>
+                <div class="row-1">
+                    <div class="r-image">
+                        <p id="c-top">Product Sales</p>
+                        <p  id="c-mid">175 Kg</p>
+                        <p id="c-btm">avg sold per month</p>
+                    </div>
+                </div>
+                <div class="row-1">
+                    <div class="r-image">
+                        <div class="circular">
+                            <div class="c-value">85%</div>
+                            <div class="c-label"> 15K orders</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div><br><br>
+            <div class="row">
+                <div class="header"><h1>Achievements</h1></div></div>
+                <div class="r-block">
+                    <div class="row-1">
+                        <div class="r-image">
+                            <p id="c-top1">5 Stars</p>
+                            <div class="circle"><p  id="c-mid1">12k </p><p id="c-mid2">27k</p></div>
+
+                            <p id="c-btm1">5 star rating</p>
+                            <p id="c-btm2"> Total no of rating</p>
+
+                        </div>
+                    </div>
+                    <div class="row-1">
+                        <div class="r-image">
+                            <img src="https://cdn.shopify.com/s/files/1/0149/3674/products/PeoplesChoiceStevieAwardImage_large.jpg?v=1335371790" alt="">
+                            <div class="text" id="award">2x Award Winner</div>
+                        </div>
+                    </div>
+                    <div class="row-1">
+                        <div class="r-image">
+                            <img src="https://stallonegroup.com/images/apeda_certi.gif" alt="">
+                            <div class="text" id="award">APEDA certified</div>
+
+                        </div>
+                    </div>
+                </div><br>
+            <div class="v-block">
+                <h1>Farming Clips</h1>
+                <iframe src="https://www.youtube.com/embed/ANfv2hPEt1s" frameborder="0" width="600px" height="350px"></iframe>
+            </div> <br> <br>
+            <div class="rating">
+                <div class="user">
+                    <p>User rating</p>
+                </div>
+                <div class="user">
+                     <p id="stars">★★★★★</p>
+                </div>
+                <div class="avg"><p>5 stars on average from 27k reviews</p></div>
+                <hr> <br>
+                <div class="star-row">
+                    <div class="star"><div class="">5 star</div></div>
+                    <div class="bar-container"><div class="bar"><div class="bar-5"></div></div></div>
+                </div>
+                <div class="star-row">
+                    <div class="star"><div class="">4 star</div></div>
+                    <div class="bar-container"><div class="bar"><div class="bar-4"></div></div></div>
+                </div>
+                <div class="star-row">
+                    <div class="star"><div class="">3 star</div></div>
+                    <div class="bar-container"><div class="bar"><div class="bar-3"></div></div></div>
+                </div>
+                <div class="star-row">
+                    <div class="star"><div class="">2 star</div></div>
+                    <div class="bar-container"><div class="bar"><div class="bar-2"></div></div></div>
+                </div>
+                <div class="star-row">
+                    <div class="star"><div class="">1 star</div></div>
+                    <div class="bar-container"><div class="bar"><div class="bar-1"></div></div></div>
+                </div>
+                <div class="rate"><p>Rate Now </p></div>
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                  </div> <br>
+            </div>
+            <div class="review">
+                <div class="user-review">
+                    <textarea name="" id="u-review" cols="60" rows="1" placeholder="Write a review"></textarea>
+                </div> <br>
+                <div class="c-review">
+                    <div class="r-comment"><p id="r-star"> 5 ★  </p><p id="comment">Simply Awesome</p></div>
+                    <p>
+                        Atleast for me is all in one place, from some fresh fruits to dryfruits and  atleast fit me all in one place,<br>
+                        i would recommend you to buy  form here they are so amazing, good food for a cheap price.
+
+                    </p><p>Sanjeeb Ranasingh , Ooty</p>
+                    <hr>
+                </div><br>
+                <div class="c-review">
+                    <div class="r-comment"><p id="r-star"> 4 ★  </p><p id="comment">Good Choice</p></div>
+                    <p>
+                        Atleast for me is all in one place, from some fresh fruits to dryfruits and  atleast fit me all in one place,<br>
+                        i would recommend you to buy form here they are so amazing, good food for a cheap price.
+
+                    </p>
+                    <p>Sanjeeb Ranasingh , Chennai</p>
+                    <hr>
+                </div><br>
+                <div class="c-review">
+                    <div class="r-comment"><p id="r-star"> 5 ★  </p><p id="comment">Excellent</p></div>
+                    <p>
+                        Atleast for me is all in one place, from some fresh fruits to dryfruits and atleast fit me all in one place,<br>
+                        i would recommend you to buy form here they are so amazing, good food for a cheap price.
+
+                    </p><p>Sanjeeb Ranasingh , Vellore</p>
+                    <hr>
+                </div>
+                <br>
+                <p id="all">Read all reviews </p>
+            </div>
+    </div> <br> <br><br>
+    <div class="footer">
+        <div class="contactus">
+            <ul type=none>
+                <li><a>Contact Us</a></li>
+                <li><a>+91 9999988888</a></li>
+                <li><a>enquiries@farmfresh.com</a></li>
+            </ul>
+        </div>
+        <div class='enquiries'>
+            <ul type='none'>
+                <li><a>Payment and Billing</a></li>
+                <li><a>Returns</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Customer Forum</a></li>
+            </ul>
+        </div>
+        <div class='about-us'>
+            <ul type='none'>
+                <li><a>About Us</a></li>
+                <li><a>Work with Us</a></li>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms and Conditions</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Footer End-->
+
+
+</body>
+</html>

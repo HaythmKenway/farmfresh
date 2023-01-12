@@ -1,0 +1,126 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+html {
+    
+    margin:0px;
+    padding: 0px;
+}
+body {
+    background-image: url("./imagess/farmbg.jpg");    
+    margin:0px;
+    padding: 0px;
+    font-family: 'montserrat','sans-serif';
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container {
+    height:90vh;
+    width:80vw;
+    background-image: url("images\bg.jpg");
+    background-color:  rgb(44, 219, 149);
+    border-radius: 20px;
+    display:flex;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+}
+
+.card {
+    background-color: white; 
+    width:80%;
+    height:60%;
+    border-radius:8px;
+    align-items: center;
+    display: flex;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+}
+
+.card .images,
+.card .infos{
+    width:50%;
+    display:flex;
+}
+.card .price{
+    width:50%;
+    justify-content: space-evenly;
+    display:flex;
+}
+
+.infos .more-infos{
+    display: flex;
+    justify-content: space-evenly;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+}
+.reviews{
+    color: gold;
+}
+h3:nth-child(2){
+    color:gray;
+    text-decoration: line-through;
+}
+h5:nth-child(2){
+    color:gray;}
+    
+h5:nth-child(3){
+    color:gray;}
+
+.more-infos h5:nth-child(1){
+    color:black;
+}
+.info-content {
+    font-size:12px;
+
+}
+
+.buttons button{
+    width: 40%;
+    height: 30px;
+    font: inherit;
+    border-radius: 25px;
+    border: 2px solid  rgb(44, 219, 149);
+    background-color:white;
+}
+.buttons button:hover {
+    border: 0.2px solid black;
+    color: white;
+    background-color: rgb(81, 161, 0);
+}
+.slider{
+    height:80px;
+    margin: 40px;
+    display:flex;
+    border-radius: 15;
+    align-items: center;
+}
+.imgslider{
+    display: flex;
+    height: 40px;
+    justify-content: 
+    space-between;
+    margin: auto;
+
+}
+.imgslider div {
+    display:flex;
+    height:100%;
+    width:20%
+
+}
+.imgslider img {
+    display:flex;
+    height:40%;
+    width:20%
+
+}

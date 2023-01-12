@@ -1,0 +1,332 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+html {
+    
+    margin:0px;
+    padding: 0px;
+}
+body {
+    background-image: url("/static/images/farmbg.jpg");
+    margin:0px;
+    padding: 0px;
+    font-family: 'montserrat','sans-serif';
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.carousel {
+    align-items: center;
+    display: flex;
+    margin: 2rem auto;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    
+    &__images {
+      display: flex;
+      transform: translateX(0);
+      transition: transform 0.25s;
+      
+      img {
+        border-radius: 5px;
+      }
+    }
+    
+    &__button {
+      background: teal;
+      border: 0;
+      border-radius: 50%;
+      color: white;
+      cursor: pointer;
+      font-size: 1.5rem;
+      font-weight: bold;
+      height: 3rem;
+      transform: translateX(0);
+      opacity: 0.25;
+      position: absolute;
+      transition: opacity 0.25s;
+      width: 3rem;
+      z-index: 1;
+      
+      &.previous {
+        left: 5px;
+      }
+      
+      &.next {
+        right: 5px;
+      }
+      
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+.container {
+    /* height:90vh; */
+    /* width:80vw; */
+    height:100vh;
+    width:100vw;
+    border-radius: 0px;
+    /* border-radius: 20px; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+}
+
+.card {
+    background-color: white; 
+    /* width:80%;
+    height:60%; */
+    width:90vw;
+    height:90vh;
+    border-radius:8px;
+    align-items: center;
+    display: flex;
+    /* box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3); */
+}
+
+.card .images,
+.card .infos{
+    width:50%;
+    display:flex;
+}
+.card .price{
+    width:50%;
+    justify-content: space-evenly;
+    display:flex;
+}
+
+.infos .more-infos{
+    /* justify-content: space-evenly; */
+    /* display: flex; */
+    display: flexbox;
+    flex-direction: row;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    padding: 40px;
+}
+.reviews{
+    color: gold;
+}
+h3:nth-child(2){
+    color:gray;
+    text-decoration: line-through;
+}
+h5:nth-child(2){
+    color:gray;}
+    
+h5:nth-child(3){
+    color:gray;
+}
+        
+        font-size: 12px;
+        .more-infos h5:nth-child(1){
+            color:black;
+            font-size: 12px;
+        }
+        .info-content {
+            font-size:12px;
+            
+        }
+.buttons button{
+            width: 35vw;
+            :5px;
+            height: 5vh;
+            font: inherit;
+            align-content: center;
+            border-radius: 25px;
+            display: flexbox;
+            border: 2px solid  rgb(44, 219, 149);
+            background-color:white;
+        }
+.buttons button:hover {
+            border: 0.2px solid black;
+            color: white;
+            background-color: rgb(81, 161, 0);
+}/* 
+.slider{
+            /* height:80px; */
+            margin: 10px;
+            display:flex;
+            border-radius: 15;
+            align-items: none ;
+            margin: 30px 50 px;
+            height: 20vh;
+            width: 20vw;
+        }
+.imgslider{
+            display: flex;
+            height: 10px;
+            justify-content: 
+            space-between;
+            margin: auto;
+            
+        }
+.imgslider div {
+            display:flex;
+            height:100%;
+            width:20%
+    
+}
+.imgslider img {
+    display:flex;
+    height:40%;
+    width:20%
+     */
+}
+@media only screen and (min-width:1136px) {
+    *{
+        margin:0px;
+        padding: 0px;
+    }
+    
+    html {
+        
+        margin:0px;
+        padding: 0px;
+    }
+    body {
+        background-image: url("/static/images/farmbg.jpg");
+        margin:0px;
+        padding: 0px;
+        font-family: 'montserrat','sans-serif';
+        height: 100vh;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .container {
+        height:90vh;
+        width:80vw;
+        background-image: url("/static/images/bg.jpg");
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+    }
+    
+    .card {
+        background-color: white; 
+        width:80%;
+        height:60%;
+        border-radius:8px;
+        align-items: center;
+        display: flex;
+        /* box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3); */
+    }
+    
+    .card .images,
+    .card .infos{
+        width:50%;
+        display:flex;
+        justify-items:row;
+    }
+    .image{
+        align-items: center;
+        /* display: flex; */
+        overflow: hidden;
+        position: relative;
+        width: 50px;
+    }
+    .card .price{
+        width:100%;
+        justify-content: space-between;
+        display:flex;
+    }
+    
+    .infos .more-infos{
+        display: flex;
+        margin:3px;
+        justify-content: space-evenly;
+    }
+    .infos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px;
+    }
+    .reviews{
+        color: gold;
+    }
+    h3:nth-child(2){
+        color:gray;
+        text-decoration: line-through;
+    }
+    h5:nth-child(2){
+        color:gray;}
+        
+    h5:nth-child(3){
+        color:gray;}
+    
+    .more-infos h5:nth-child(1){
+        color:black;
+    }
+    .info-content {
+        font-size:12px;
+    
+    }
+    .buttons{
+        display: flexbox;
+        align-items: center;
+
+    }
+    
+    .buttons button{
+        width: 40%;
+        height: 30px;
+        margin: 5px;
+        font: inherit;
+        border-radius: 25px;
+        border: 2px solid  rgb(44, 219, 149);
+        background-color:white;
+    }
+    .buttons button:hover {
+        border: 0.2px solid black;
+        /* color: white; */
+        background-color: rgb(44, 219, 149);
+    }
+    .slider{
+        height:80px;
+        margin: 40px;
+        display:flex;
+        border-radius: 15;
+        align-items: center;
+    }
+    .imgslider{
+        display: flex;
+        height: 40px;
+        justify-content: 
+        space-between;
+        margin: auto;
+    
+    }
+    .imgslider div {
+        display:flex;
+        height:100%;
+        width:20%
+    
+    }
+    .imgslider img {
+        display:flex;
+        height:40%;
+        width:20%
+    
+    }  
+       
+    
+}

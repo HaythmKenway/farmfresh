@@ -1,0 +1,994 @@
+* {
+    margin: 0px;
+    border: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #f2f2f2;
+}
+
+/*Nav bar start*/
+.nav-bar {
+    height: 60px;
+    background-color: #2CDB95;
+}
+.nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1050px;
+    height: 60px;
+    margin: auto;
+}
+#logo {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+#Search-box {
+    height: 30px;
+    width: 500px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    background-image: url('/static/images/glass.png');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+#search-icon{
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-color: rgb(68, 67, 67);
+}
+
+#city {
+    width: 92.15px;
+    height: 24px;
+    border-radius: 20px;
+    appearance: none;
+    background-image: url('/static/images/expand-more.png');
+    background-repeat: no-repeat;
+    background-position-x: 65px;
+    background-position-y: 8px;
+    cursor: pointer;
+    background-color: white;
+    padding-left: 5px;
+}
+
+#cart {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#Sign-Up {
+    display: flex;
+    height: 30px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    background-color: gold;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+#Sign-Up:hover {
+    background-color: goldenrod;
+}
+
+#Login {
+    display: flex;
+    height: 30px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+#Login:hover {
+    background-color: gray;
+}
+
+#signupAndLogin{
+    display:none;
+}
+
+/*Nav bar end*/
+
+/*Carousel*/
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    height: min-content;
+    align-items: center;
+}
+
+#s1 {
+    width: 896px;
+    height: 350px;
+    float: left;
+    margin-left: -70%;
+    object-fit: cover;
+}
+
+#s2 {
+    width: 896px;
+    height: 350px;
+    object-fit: cover;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+#s3 {
+    width: 896px;
+    height: 350px;
+    object-fit: cover;
+    margin-right: -70%;
+}
+
+#prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: whitesmoke;
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+} 
+
+#next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: whitesmoke;
+    cursor: pointer;
+    opacity: 80%;
+    z-index: 20;
+    position: absolute;
+    right: 0px;
+}
+
+/*Carousel End*/
+
+/*Flip Card Effect*/
+.Card-container {
+    display: block;
+    height: 325px;
+    margin-bottom: 25px;
+}
+
+.Cards {
+    display: inline-block;
+    transform-style: preserve-3d;
+    transition: all 0.75s ease;
+}
+
+.Cards:hover {
+    transform: rotateY(180deg)
+}
+
+.Card-front {
+    width: 300px;
+    height: 325px;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.Card-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 325px;
+    backface-visibility: hidden;
+    background-color: gray;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+}
+
+.Card-back p {
+    display: block;
+    width: 200px;
+}
+
+/*Flip card effect end*/
+
+/*usp section start*/
+.usp {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px;
+    width: 1000px;
+    height: 300px;
+    background-color: white;
+    border-radius: 100px 0px 0px;
+    z-index: 30;
+}
+
+#farmer {
+    position: relative;
+    left: 28px;
+    height: 300px;
+    width: 450px;
+    border-radius: 500px 0px 0px 0px;
+}
+
+.usp p {
+    font-size: 25px;
+    width: 550px;
+    margin-left: 20px;
+    align-items: center;
+    line-height: 40px;
+}
+
+#Join-the-movement {
+    display: flex;
+    align-items: center;
+    background-color: gold;
+    width: max-content;
+    padding: 20px;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#Join-the-movement:hover {
+    background-color: goldenrod;
+}
+
+/*usp section ends*/
+
+/*Combo Boxes start*/
+
+.combo-boxes {
+    display: block;
+    width: 1050px;
+    margin: auto;
+    margin-top: 25px;
+    height: 800px;
+}
+
+.products {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.txt-header {
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+#poster {
+    width: 282px;
+    height: 282px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#Buy-Now {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: gold;
+    padding: 20px;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.combo-box-listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/*Combo boxes ends*/
+
+/*View all button start*/
+.View-all {
+    display: inline-flex;
+    background-color: coral;
+    height: min-content;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+
+.View-all:hover {
+    background-color: rgb(128, 39, 7);
+}
+
+/*View all button ends*/
+
+/*Fabric Finish Background start*/
+.fabric-finish {
+    background-image: url("/static/images/fabric-grey.jpg");
+}
+
+/*Fabric Finish Background end*/
+
+/*Organic banner start*/
+.organic {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    width: 1050px;
+    height: 300px;
+    margin: auto;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 0px 100px 0px 0px;
+}
+
+#organic-img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0px 500px 0px 0px;
+}
+
+.organic p {
+    margin-left: 20px;
+    width: 550px;
+    line-height: 40px;
+}
+
+.organic-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: coral;
+    padding: 20px;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.organic-btn:hover {
+    background-color: rgb(128, 39, 7);
+}
+
+/*organic banner end*/
+
+/* alignment */
+.dst {
+    margin-top: 20px;
+}
+
+/*nav bar 1 starts */
+#explore{
+    display: none;
+}
+.nav-bar1 {
+    height: 50px;
+    background-color: #84d6b591;
+}
+
+.nav-content1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1050px;
+    height: 100%;
+    margin: auto;
+}
+
+.nav-bar1 li {
+    display: inline-block;
+}
+
+.nav-bar1 a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-bar1 a:hover {
+    color: orangered;
+}
+
+#ham{
+    display: none;
+}
+
+/*nav bar 1 ends*/
+
+/*today's deals starts*/
+.todays-deals {
+    display: block;
+    height: 400px;
+    width: 1050px;
+    margin: auto;
+}
+
+.fabric-sandal {
+    margin-top: 20px;
+    background-image: url("/static/images/fabric-sandal.jpeg");
+}
+
+.today-deals-listing {
+    display: flex;
+    width: 1050px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.deal-cards {
+    width: 225px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.deal-cards:hover {
+    border: 2px solid violet;
+    margin-top: -15px;
+}
+
+/*today's deals end*/
+
+/* Used to target sub headings */
+.sub-heading {
+    font-size: 18px;
+}
+
+/*Testimonial starts*/
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    height: 400px;
+    width: 1200px;
+    margin: auto;
+}
+
+.testimonial-card {
+    display: inline-block;
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.profile-img {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.profile {
+    display: block;
+    width: 125px;
+    height: 125px;
+    margin: auto;
+}
+
+.testimonial-card p {
+    margin: auto;
+    margin-top: 20px;
+    width: 300px;
+    line-height: 25px;
+    font-size: 20px;
+    font-family: 'itim', 'cursive';
+}
+
+.testimonial-cards-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#testimonial-prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    opacity: 75%;
+    cursor: pointer;
+}
+
+#testimonial-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    opacity: 75%;
+    cursor: pointer;
+}
+
+#prof4 {
+    display: none;
+}
+
+#prof5 {
+    display: none;
+}
+
+#prof6 {
+    display: none;
+}
+
+/* testimonial ends */
+
+/*Fabric blue background starts*/
+.fabric-blue {
+    background-image: url("/static/images/fabric-blue.jpg");
+}
+
+/*Fabric blue background end*/
+
+/*footer start*/
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    height: 250px;
+    align-items: center;
+    background-image: url('/static/images/footerimg.jpg');
+}
+
+.footer li {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+/*footer end*/
+#Search-boxautocomplete-list{
+    position: absolute;
+    top: 46px;
+    z-index: 99;
+    background-color: white;
+    height:max-content;
+}
+#Search-boxautocomplete-list div{
+    margin-bottom: 5px;
+    width: 100%;
+    height: 25px;
+    cursor: pointer;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+#Search-boxautocomplete-list div:hover, focus{
+    background-color: #f2f2f2;
+}
+/* Medai Query */
+
+@media only screen and (max-width:1199px) {
+    #prof2{
+        display: none;
+    }
+    .testimonial{
+        width: 800px;
+    }
+}
+@media only screen and (max-width:1050px){
+    .nav-content{
+        width: 85%;
+    }
+    .nav-content1{
+        width: 85%
+    }
+    #Search-box{
+        width: 300px;
+        font-size: x-small;
+    }
+    .usp{
+        width: 80vw;
+    }   
+    .usp p{
+        margin-left: 50px;
+    }
+    .organic{
+        width: 90vw;
+    }
+    .combo-boxes{
+        width: 80vw;
+        height: 650px;
+    }
+    #poster{
+        width: 200px;
+        height: 200px;
+    }
+
+    .Card-front{
+        width: 250px;
+        height: 250px;
+    }
+    .Card-back{
+        width: 250px;
+        height: 250px;
+    }
+    .Card-back p{
+        font-size: 15px;
+        width: 150px;
+        margin: auto;
+    }
+    .deal-cards{
+        width: 200px;
+        height: 200px;
+    }
+    #s1{
+        display: none;
+    }
+    #s3{
+        display: none;
+    }
+    .todays-deals{
+        width: 98vw;
+    }
+    .today-deals-listing{
+        width: 98vw;
+    }
+}
+@media  (max-width: 1000px) {
+    .usp p{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .usp{
+        border-radius: 50px 0px 0px 0px;
+    }
+    #Join-the-movement{
+        padding: 10px;
+        font-size: 16px;
+    }
+    .organic p{
+        font-size: 16px;
+    }
+    .organic-btn{
+        padding: 10px;
+        font-size: 16px;
+    }
+    #farmer{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+    #Buy-Now{
+        padding: 10px;
+        font-size: 16px;
+        margin: auto;
+    }
+    .organic{
+        width: 95%;
+    }
+    #organic-img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .Card-front{
+        width: 200px;
+        height: 250px;
+    }
+    .Card-back{
+        width: 200px;
+        height: 250px;
+    }
+    .deal-cards{
+        width: 150px;
+        height: 150px;
+    }
+    .todays-deals{
+        height: 275px;
+    }
+}
+@media (max-width: 896px){
+    #s2{
+        object-fit:contain;
+        width: 100vw;
+        height: min-content;
+    }
+    .deal-cards{
+        width: 125px;
+        height: 125px;
+    }
+}
+@media (max-width: 800px){
+    #prof1{
+        display:none;
+    }
+    .testimonial{
+        width: 75vw;
+    }
+    .combo-boxes{
+        height: 600px;
+    }
+    .Card-container{
+        height: 250px;
+       }
+}
+@media (max-width: 900px){
+    #Search-box{
+        width: 250px;
+    }
+    .nav-content{
+        width: 95%;
+    }
+    .nav-content1{
+        width: 95%;
+    }
+}
+@media (max-width: 700px){
+    #Sign-Up{
+        padding: 10px;
+        font-size: small;
+    }
+    #Login{
+        padding: 10px;
+        font-size: small;
+    }
+    .today-deals-listing{
+        height: 180px;
+    }
+    .nav-content{
+        width: 98%;
+    }
+    .nav-content1{
+        width: 98%;
+        font-size: small;
+    }
+}
+@media (max-width: 650px){
+    .footer{
+        flex-direction: column;
+        height: max-content;
+    }
+    .footer ul{
+        margin-top: 20px;
+    }
+    #Sign-Up{
+        display:none;
+    }
+    #Login{
+        display: none;
+    }
+    #signupAndLogin{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        width: 35px;
+        background-color: rgb(247, 96, 9);
+        color: white;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .lastone{
+        display: none;
+    }
+    .contactus{
+        display: flex;
+        width: 230px;
+        justify-content: flex-start;
+        /* margin: auto; */
+    }
+    .enquiries{
+        display: flex;
+        width: 230px;
+        justify-content: flex-start;
+        /* margin: auto; */
+    }
+    .about-us{
+        display: flex;
+        width: 230px;
+        justify-content: flex-start;
+        /* margin: auto; */
+    }
+    .footer ul{
+        padding: 0px;
+    }
+    .usp p{
+        line-height: 30px;
+    }
+    .organic p{
+        line-height: 30px;
+    }
+    #farmer{
+        width: 250px;
+    }
+    .txt-header{
+        font-size: 18px;
+    }
+    .sub-heading{
+        font-size: 14px;
+    }
+}
+@media (max-width: 750px){
+    .combo-boxes{
+        height: 850px;
+    }
+}
+@media (max-width: 550px){
+    #Search-box{
+        width: 200px;
+        font-size: 10px;
+        background-image: none;
+    }
+    .usp p {
+        line-height: 25px;
+    }
+    #organic-img{
+        width: 200px;
+    }
+    .combo-boxes{
+        width: 95%;
+    }
+    .testimonial{
+        width: 90vw;
+    }
+}
+@media (max-width: 500px){
+    #Search-box{
+        display: none;
+    }
+    #search-icon{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        position:relative;
+        left: 50px;
+        border-radius: 10px;
+        background-color: white;
+        cursor: pointer;
+    }
+    #city{
+        position: relative;
+        left: 40px;
+        flex-shrink: 0;
+    }
+    #cart{
+        position: relative;
+        left: 15px;
+    }
+    .usp{
+        display: none;
+    }
+    .organic{
+        display: none;
+    }
+    .todays-deals{
+        height: 450px;
+    }
+    .lastone{
+        display: inline-block;
+    }
+    .today-deals-listing{
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 450px){
+    .Card-front{
+        width: 175px;
+        height: 210px;
+    }
+    .Card-back{
+        width: 175px;
+        height: 210px;
+        font-size: 16px;
+    }
+    .nav-content{
+        width: 100%;
+    }
+    #poster{
+        width: 150px;
+        height: 150px;
+    }
+    .nav-content1 a{
+        display: none;
+    }
+    #ham{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background-color: white;
+        position: absolute;
+        right: 0;
+    }
+    .nav-content{
+        height: 60px;
+    }
+    #ham:active{
+        background-color: rgb(110, 108, 108);
+    }
+    .nav-bar1 a{
+        margin-top: 20px;
+    }
+    .testimonial{
+        width:99%;
+    }
+    #prev{
+        width: 25px;
+        height: 25px;
+    }
+    #next{
+        width: 25px;
+        height: 25px;
+    } 
+    #testimonial-prev{
+        width: 20px;
+        height: 20px;
+    }
+    #testimonial-next{
+        width: 20px;
+        height: 20px;
+    }
+    #search-icon{
+        left: 25px;
+    }
+    #city{
+        left: 15px;
+    }
+    #cart{
+        left: 5px;
+    }
+    #explore{
+        display: inline-block;
+        font-size: large;
+    }
+}
+@media (max-width: 400px){
+    .Card-front{
+        width: 150px;
+        height: 210px;
+        font-size: small;
+    }
+    .Card-back{
+        width: 150px;
+        height: 210px;
+        font-size: small;
+    }
+}

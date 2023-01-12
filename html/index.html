@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" type="image/x-icon" href="/static/images/logo3.png" >
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Source+Sans+Pro:wght@200&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="/static/sources/css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- nav bar starts -->
+    <div class="nav-bar">
+        <div class="nav-content">
+            <img src="/static/images/logo1.png" alt="logo" id="logo">
+            <input type="text" id="Search-box" placeholder="Search for veggies, fruits, dairy and much more" onkeydown="search()">
+            <!-- search -->
+            <!-- </span></i> -->
+            <button id='search-icon'><span class="material-icons-outlined" id="glass">search</span></button>
+            <select id='city'>
+                <option value="Chennai">Chennai</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Delhi">Delhi</option>
+            </select><a href="/cart">
+            <button id="cart"><span class="material-icons-outlined">
+                    shopping_cart
+                </span></button></a>
+            {% if user.is_authenticated == True %}
+            <h4 style = "color: white;">Welcome {{name}}</h4>
+            <a href="/logout"><button style="width: 60px; height: 30px; border-radius: 10px; background-color: white; cursor: pointer;">Logout</button></a>
+            {% else %}
+            <a href = "signup">
+            <button id="signupAndLogin">
+                <span class="material-icons">
+                    person
+                </span></button>
+            </a>
+                <a href="signup">
+                    <button id="Sign-Up">Sign Up</button></a>
+                    <a href="login">
+            <button id="Login">Login</button></a>
+            {% endif %}
+        </div>
+    </div>
+    <!-- nav bar ends -->
+
+    <!-- nav bar 1 starts -->
+    <div class="nav-bar1">
+        <button id="ham" onclick="hamOpen()"><span class="material-icons-outlined">
+                menu
+            </span></button>
+        <div class="nav-content1" id="nav-con1">
+            <span id="explore">
+                Explore our products
+            </span>
+            <a href="/listproducts">
+                <li>Combo Box</li>
+            </a>
+            <a href="/listproducts">
+                <li>Vegetables</li>
+            </a>
+            <a href="/listproducts">
+                <li>Fruits</li>
+            </a>
+            <a href="/listproducts">
+                <li>Dairy</li>
+            </a>
+            <a href="/listproducts">
+                <li>Nuts</li>
+            </a>
+            <a href="/listproducts">
+                <li>Spices</li>
+            </a>
+            <a href="/listproducts">
+                <li>Pulses</li>
+            </a>
+            <a href="/listproducts">
+                <li>Cereal</li>
+            </a>
+        </div>
+    </div>
+    <!-- nav bar 1 ends -->
+
+    <!-- Carousel begins -->
+    <div class='carousel'>
+        <button id='prev' onclick="prevslide()"><span class="material-icons-outlined">arrow_back_ios</span></button>
+        <img src='/static/images/join-the-movement.png' id='s1'>
+        <img src='/static/images/go-organic.png' id='s2'>
+        <img src='/static/images/pulses.png' id='s3'>
+        <button id='next' onclick="nextslide()"><span class="material-icons-outlined">arrow_forward_ios</span></button>
+    </div>
+    <!-- Carousel ends -->
+
+    <!-- usp section begins -->
+    <div class="usp">
+        <p>We source all our supplies directly from farmers, join our movement and get access to organic products
+            and
+            support local farmers.<button id='Join-the-movement'>Join Now<span
+                    class="material-icons-outlined">arrow_forward</span></button></p>
+        <img src="/static/images/farmer.jpg" alt="Image of a farmer" id="farmer">
+    </div>
+    <!-- usp section ends -->
+
+    <!-- fabric sandal to give the background starts -->
+    <div class="fabric-sandal">
+        <!-- today's deals section begins here -->
+        <div class="todays-deals">
+            <div class="description">
+                <span class="txt-header dst">Today's Deals:</span>
+                <button class='View-all'>View all<span class="material-icons-outlined">arrow_forward</span></button>
+            </div>
+            <div class="today-deals-listing">
+                <a href="/detail/carrot">
+                    <table class="products">
+                        <caption style="caption-side: bottom;"><span class="txt-header">Carrots</span><br><span
+                                class="sub-heading">&#8377 20 / kg</span>
+                        </caption>
+                        <tr>
+                            <td><img src="/static/images/carrots.jpg" alt="carrots" class="deal-cards"></td>
+                        </tr>
+                    </table>
+                </a>
+                <a href="/detail/orange">
+                    <table class="products">
+                        <caption style="caption-side: bottom;"><span class="txt-header">Oranges</span><br><span
+                                class="sub-heading">&#8377 80 / kg</span>
+                        </caption>
+                        <tr>
+                            <td><img src="/static/images/oranges-for-sale.jpg" alt="oranges" class="deal-cards"></td>
+                        </tr>
+                    </table>
+                </a>
+                <a href="/detail/milk">
+                    <table class="products">
+                        <caption style="caption-side: bottom;"><span class="txt-header"><a href="#">Milk</span><br><span
+                                class="sub-heading">&#8377 50 / L</span>
+                </a>
+                </caption>
+                <tr>
+                    <td><img src="/static/images/milk.jpg" alt="carrots" class="deal-cards"></td>
+                </tr>
+                </table>
+                </a>
+                <a href="/detail/honey" class="lastone">
+                    <table class="products">
+                        <caption style="caption-side: bottom;"><span class="txt-header"><a
+                                    href="#">Honey</span><br><span class="sub-heading">&#8377 350 / L</span>
+                </a>
+                </caption>
+                <tr>
+                    <td><img src="/static/images/honey-for-sale.jpg" alt="honey" class="deal-cards"></td>
+                </tr>
+                </table>
+                </a>
+            </div>
+        </div>
+        <!-- today's deals end here -->
+
+        <!-- customized deals starts here -->
+        <div class="todays-deals">
+            <div class="description">
+                <span class="txt-header dst">Deals handpicked for you:</span>
+                <button class='View-all'>View all<span class="material-icons-outlined">arrow_forward</span></button>
+            </div>
+            <div class="today-deals-listing">
+                <a href="/detail/carrot">
+                    <table class="products">
+                        <caption style="caption-side: bottom;"><span class="txt-header">Carrots</span><br><span
+                                class="sub-heading">&#8377 20 / kg</span>
+                        </caption>
+                        <tr>
+                            <td><img src="/static/images/carrots.jpg" alt="carrots" class="deal-cards"></td>
+                        </tr>
+                    </table>
+                </a>
+                <a href="/detail/capsicum">
+                    <table class="products">
+                        <caption style="caption-side: bottom;"><span class="txt-header">Capcicum</span><br><span
+                                class="sub-heading">&#8377 30 / kg</span>
+                        </caption>
+                        <tr>
+                            <td><img src="/static/images/capcicum.jpg" alt="capcicum" class="deal-cards"></td>
+                        </tr>
+                    </table>
+                </a>
+                <a href="/detail/cauliflower">
+                    <table class="products">
+                        <caption style="caption-side: bottom;"><span class="txt-header"><a
+                                    href="#">Cauliflower</span><br><span class="sub-heading">&#8377 100 /
+                                piece</span>
+                </a>
+                </caption>
+                <tr>
+                    <td><img src="/static/images/cauliflower.jpg" alt="cauliflower" class="deal-cards"></td>
+                </tr>
+                </table>
+                </a>
+                <a href="/detail/beetroot" class="lastone">
+                    <table class="products">
+                        <caption style="caption-side: bottom;"><span class="txt-header"><a
+                                    href="#">Beetroot</span><br><span class="sub-heading">&#8377 40 / kg</span>
+                </a>
+                </caption>
+                <tr>
+                    <td><img src="/static/images/beetroot.jpg" alt="beetroot" class="deal-cards"></td>
+                </tr>
+                </table>
+                </a>
+            </div>
+        </div>
+        <!-- customized deals end here -->
+    </div>
+    <!-- fabric background ends here -->
+
+    <!--organic section starts here-->
+    <div class="organic">
+        <img src="/static/images/oranges.jpg" id='organic-img' alt="oranges">
+        <p>Worried about all those pestisides, adulteration, check out our 100% organic products, which can help you
+            taste good food without any health risks.
+            <button class='organic-btn'>Organic <span class="material-icons-outlined">arrow_forward</span></button>
+        </p>
+    </div>
+    <!-- organic section ends here -->
+
+    <!-- fabric finish in background -->
+    <div class="fabric-finish">
+        <!-- combo box section starts here -->
+        <div class="combo-boxes">
+            <div class="description">
+                <span class="txt-header dst">Combo Boxes:</span>
+                <button class='View-all'>View all<span class="material-icons-outlined">arrow_forward</span></button>
+            </div>
+            <div class="combo-box-listing">
+                <div class="Card-container" onclick="combobox('veggies')">
+                    <div class="Cards" >
+                        <div class="Card-front">
+                            <table class="products">
+                                <caption style="caption-side: bottom;"><span class="txt-header">Handpicked
+                                        veggies</span>
+                                </caption>
+                                <tr>
+                                    <td><img src="/static/images/veggies.jpg" alt="veggies" id="poster"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="Card-back">
+                            <p>
+                                Grab a box and experience mother nature's gift of 20 exotic handpicked veggies.
+                            </p>
+                            <button id='Buy-Now'>Buy Now<span
+                                    class="material-icons-outlined">arrow_forward</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Card-container" onclick="combobox('fruits')">
+                    <div class="Cards">
+                        <div class="Card-front">
+                            <table class="products">
+                                <caption style="caption-side: bottom;"><span class="txt-header">Handpicked
+                                        fruits</span>
+                                </caption>
+                                <tr>
+                                    <td><img src="/static/images/fruits.jpg" alt="fruits" id="poster"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="Card-back">
+                            <p>
+                                Grab a box and experience mother nature's gift of 20 exotic handpicked fruits.
+                            </p>
+                            <button id='Buy-Now'>Buy Now<span
+                                    class="material-icons-outlined">arrow_forward</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Card-container" onclick="combobox('dairy')">
+                    <div class="Cards">
+                        <div class="Card-front">
+                            <table class="products">
+                                <caption style="caption-side: bottom;"><span class="txt-header">Dairy
+                                        Special</span>
+                                </caption>
+                                <tr>
+                                    <td><img src="/static/images/dairy.jpg" alt="veggies" id="poster"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="Card-back">
+                            <p>
+                                Grab a box and experience unadulterated, thick and smooth dairy products.
+                            </p>
+                            <button id='Buy-Now'>Buy Now<span
+                                    class="material-icons-outlined">arrow_forward</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Card-container">
+                    <div class="Cards">
+                        <div class="Card-front">
+                            <table class="products">
+                                <caption style="caption-side: bottom;"><span class="txt-header">Nuts
+                                        Special</span>
+                                </caption>
+                                <tr>
+                                    <td><img src="/static/images/nuts.jpg" alt="nuts" id="poster"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="Card-back">
+                            <p>
+                                Get your hands on the box full of the tastiest and healthiest nuts.
+                            </p>
+                            <button id='Buy-Now'>Buy Now<span
+                                    class="material-icons-outlined">arrow_forward</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Card-container">
+                    <div class="Cards">
+                        <div class="Card-front">
+                            <table class="products">
+                                <caption style="caption-side: bottom;"><span class="txt-header">Handpicked
+                                        Spices</span>
+                                </caption>
+                                <tr>
+                                    <td><img src="/static/images/spices.jpg" alt="spices" id="poster"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="Card-back">
+                            <p>
+                                A box of flavour rich handpicked spices, to deliver you the authentic taste of
+                                Indian
+                                food.
+                            </p>
+                            <button id='Buy-Now'>Buy Now<span
+                                    class="material-icons-outlined">arrow_forward</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Card-container">
+                    <div class="Cards">
+                        <div class="Card-front">
+                            <table class="products">
+                                <caption style="caption-side: bottom;"><span class="txt-header">Pulses
+                                        Special</span>
+                                </caption>
+                                <tr>
+                                    <td><img src="/static/images/pulses.jpg" alt="veggies" id="poster"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="Card-back">
+                            <p>
+                                Searching for a vegan protein source, well you are on the right place, grab a combo
+                                box
+                                of
+                                India's finest and richest pulses.
+                            </p>
+                            <button id='Buy-Now'>Buy Now<span
+                                    class="material-icons-outlined">arrow_forward</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- combo box section ends here -->
+    </div>
+    <!-- fabric finish background ends here -->
+
+    <!-- fabric blue background starts here -->
+    <div class="fabric-blue">
+        <!-- testimonial section starts here -->
+        <div class="testimonial">
+            <!-- <div class="description"> -->
+            <h2 class="dst" style="margin-left: 80px; font-weight:normal;">Hear from our customers:</h2>
+            <!-- </div> -->
+            <div class="testimonial-cards-all">
+                <button id="testimonial-prev" onclick="prevTestimonial()"><span
+                        class="material-icons-outlined">arrow_back_ios</span></button>
+                <div class="testimonial-card" id="prof1">
+                    <div class="profile">
+                        <table>
+                            <caption style="caption-side: bottom;"><span class='txt-header'>Emily</span></caption>
+                            <tr>
+                                <td>
+                                    <img src="/static/images/profile-img-1.jpg" class="profile-img" alt="profile">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Farm Fresh is a market disruptor, making the needs of farmers and customers meet, is a huge task
+                        but they have managed to do it in the most efficient way.</p>
+                </div>
+                <div class="testimonial-card" id="prof2">
+                    <div class="profile">
+                        <table>
+                            <caption style="caption-side: bottom;"><span class='txt-header'>David</span></caption>
+                            <tr>
+                                <td>
+                                    <img src="/static/images/profile-img-2.jpg" class="profile-img" alt="profile">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Farm Fresh has enabled people to get access organic, fresh supplies straight from the farm, all
+                        without burning a hole in the pocket</p>
+                </div>
+
+                <div class="testimonial-card" id="prof3">
+                    <div class="profile">
+                        <table>
+                            <caption style="caption-side: bottom;"><span class='txt-header'>Oliver</span></caption>
+                            <tr>
+                                <td>
+                                    <img src="/static/images/profile-img-3.png" class="profile-img" alt="profile">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Just amazed looking at how they made this possible, they have addressed a problem that has been
+                        in existance for decades together.
+                    </p>
+                </div>
+                <div class="testimonial-card" id="prof4">
+                    <div class="profile">
+                        <table>
+                            <caption style="caption-side: bottom;"><span class='txt-header'>John</span></caption>
+                            <tr>
+                                <td>
+                                    <img src="/static/images/profile-img-4.png" class="profile-img" alt="profile">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Just place an order and be rest assured that the produce is gonna be fresh and also of the finest
+                        quality that you would expect.
+                    </p>
+                </div>
+                <div class="testimonial-card" id="prof5">
+                    <div class="profile">
+                        <table>
+                            <caption style="caption-side: bottom;"><span class='txt-header'>Jenifer</span></caption>
+                            <tr>
+                                <td>
+                                    <img src="/static/images/profile-img-5.jpg" class="profile-img" alt="profile">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Love their customer support and the quality of the produce, they got everything covered, just
+                        give a try and I am sure you won't regret.
+                    </p>
+                </div>
+                <div class="testimonial-card" id="prof6">
+                    <div class="profile">
+                        <table>
+                            <caption style="caption-side: bottom;"><span class='txt-header'>Curran</span></caption>
+                            <tr>
+                                <td>
+                                    <img src="/static/images/profile-img-6.png" class="profile-img" alt="profile">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>With adulteration, pestisides all around, seeing these people provide organic produce is
+                        heart-warming, i do recommend everybody to try this.
+                    </p>
+                </div>
+                <button id="testimonial-next" onclick="nextTestimonial()"><span
+                        class="material-icons-outlined">arrow_forward_ios</span></button>
+            </div>
+        </div>
+        <!-- testimonial section ends here -->
+    </div>
+    <!-- fabic blue ends here -->
+
+    <!--Footer starts here-->
+    <div class="footer">
+        <div class="contactus">
+            <ul type=none>
+                <li><a>Contact Us</a></li>
+                <li><a>+91 9999988888</a></li>
+                <li><a>enquiries@farmfresh.com</a></li>
+            </ul>
+        </div>
+        <div class='enquiries'>
+            <ul type='none'>
+                <li><a>Payment and Billing</a></li>
+                <li><a>Returns</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Customer Forum</a></li>
+            </ul>
+        </div>
+        <div class='about-us'>
+            <ul type='none'>
+                <li><a>About Us</a></li>
+                <li><a>Work with Us</a></li>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms and Conditions</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Footer End-->
+
+    <!-- Script -->
+    <script src="/static/sources/javascript/index.js"></script>
+</body>
+
+</html>
