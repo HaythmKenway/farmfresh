@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product input page</title>
+    <link rel="stylesheet" href="/sources/css/product input.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+  />
+</head>
+<body>
+    <div class="main-div">
+      <h1>Product Input</h1><br>
+      <hr><hr><hr>
+      <div class="container">
+        <!--image starts-->
+        <div class="image">
+          <div class="source">
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="image" class="svg-inline--fa fa-image fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="200px" height="200px"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 336H54a6 6 0 0 1-6-6V118a6 6 0 0 1 6-6h404a6 6 0 0 1 6 6v276a6 6 0 0 1-6 6zM128 152c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zM96 352h320v-80l-87.515-87.515c-4.686-4.686-12.284-4.686-16.971 0L192 304l-39.515-39.515c-4.686-4.686-12.284-4.686-16.971 0L96 304v48z"></path></svg> 
+                    
+          </div>
+          <div class="add-image">
+            <p>Add images </p>
+            <input type="file">
+                    
+          </div>
+        </div>
+        <!--image ends-->
+        <!--Description starts-->
+        <div class="description">
+          <label for="">
+            <p>Product Name</p>
+            <input type="text" id="myInput" autocomplete="off" class="autocomplete">
+          </label>
+          <label for="">
+             <p>Description</p>
+              <textarea name="" id="prodes" cols="30" rows="10"></textarea>
+          </label>
+          <label for="">
+            <p>Shelf Life(in days)</p>
+            <input type="number" id="life">
+          </label>
+          <label for="">
+            <p>Produce available(in Kg)</p>
+            <input type="number" id="available">
+          </label>
+          <label for="">
+            <p>Price(per Kg)</p>
+            <input type="text" id="price">
+          </label>
+          <label for="" id="buttons">
+            <div class="add-button">
+              <button id="add">Add</button>
+              <i class="fas fa-plus-circle" id="plus"></i>
+            </div>
+            <div class="submit-button">
+              <button id="submit">Submit</button>
+            </div>
+          </label>
+        </div>
+        <!--description ends-->
+      </div>
+    </div>
+    <!--java script starts-->
+    <script src="/sources/javascript/product-input.js"></script>
+    <!--javascript ends-->
+</body>
+</html>

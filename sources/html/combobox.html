@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combo boxes</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logo3.png">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Source+Sans+Pro:wght@200&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2dc5a991d9.js" crossorigin="anonymous"></script>
+    <link href="/sources/css/combobox.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- nav bar starts -->
+    <div class="nav-bar">
+        <div class="nav-content">
+            <a href="/"><img src="/images/logo1.png" alt="logo" id="logo"></a>
+            <input type="text" id="Search-box" placeholder="Search for veggies, fruits, dairy and much more">
+            <!-- search -->
+            <!-- </span></i> -->
+            <button id='search-icon'><span class="material-icons-outlined" id="glass">search</span></button>
+            <select id='city'>
+                <option value="Chennai">Chennai</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Delhi">Delhi</option>
+            </select>
+            <button id="cart"><span class="material-icons-outlined">
+                    shopping_cart
+                </span></button>
+            <button id="signupAndLogin">
+                <span class="material-icons">
+                    person
+                </span></button>
+            <a href="sources/html/Signup.html">
+                <button id="Sign-Up">Sign Up</button></a>
+            <a href="sources/html/login.html">
+                <button id="Login">Login</button></a>
+        </div>
+    </div>
+    <!-- nav bar ends -->
+
+    <!-- nav bar 1 starts -->
+    <div class="nav-bar1">
+        <button id="ham" onclick="hamOpen()"><span class="material-icons-outlined">
+                menu
+            </span></button>
+        <div class="nav-content1" id="nav-con1">
+            <span id="explore">
+                Explore our products
+            </span>
+            <a href="#">
+                <li>Combo Box</li>
+            </a>
+            <a href="#">
+                <li>Vegetables</li>
+            </a>
+            <a href="#">
+                <li>Fruits</li>
+            </a>
+            <a href="#">
+                <li>Dairy</li>
+            </a>
+            <a href="#">
+                <li>Nuts</li>
+            </a>
+            <a href="#">
+                <li>Spices</li>
+            </a>
+            <a href="#">
+                <li>Pulses</li>
+            </a>
+            <a href="#">
+                <li>Cereal</li>
+            </a>
+        </div>
+    </div>
+
+    <div class="usp">
+        <p><b>looking for a vegan protien source?<br></b> well checkout our pulses special combo-boxes<br> net weight:6kg <br> item count:6
+            <a href="/sources/html/checkout.html"><button id='Join-the-movement'>checkout<span
+                    class="material-icons-outlined">arrow_forward</span></button></a>
+            <button id='Join-the-movement'><i class="fas fa-plus"></i> Add to Subscription</button>
+        </p>
+        <img src="/images/pulses.jpg" alt="Image of a farmer" id="farmer">
+    </div>
+
+    <!-- fabric finish in background -->
+    <div class="fabric-finish">
+        <!-- combo box section starts here -->
+        <div class="combo-boxes">
+            <div class="description">
+                <span class="txt-header dst">Combo Boxes:</span>
+                <!-- <button class='View-all'>View all<span class="material-icons-outlined">arrow_forward</span></button> -->
+            </div>
+            <div class="combo-box-listing">
+                <div class="Card-container">
+                    <div class="Cards">
+                        <div class="Card-front">
+                            <table class="products">
+                                <caption style="caption-side: bottom;"><span class="txt-header">yellow beans</span>
+                                </caption>
+                                <tr>
+                                    <td><img src="/images/yellow beans.jpg" alt="veggies" id="poster"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- <div class="Card-back">
+                            <p>
+                                handpickrd beans
+                            </p>
+                            <button id='Buy-Now'>Buy Now<span
+                                    class="material-icons-outlined">arrow_forward</span></button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="Card-container">
+                    <div class="Cards">
+                        <div class="Card-front">
+                            <table class="products">
+                                <caption style="caption-side: bottom;"><span class="txt-header">Handpicked
+                                        fruits</span>
+                                </caption>
+                                <tr>
+                                    <td><img src="/images/yellow beans.jpg" alt="beans" id="poster"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- <div class="Card-back">
+                            <p>
+                                Grab a box and experience mother nature's gift of 20 exotic handpicked fruits.
+                            </p>
+                            <button id='Buy-Now'>Buy Now<span
+                                    class="material-icons-outlined">arrow_forward</span></button> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+                <div class="Card-container">
+                    <div class="Cards">
+                        <div class="Card-front">
+                            <table class="products">
+                                <caption style="caption-side: bottom;"><span class="txt-header">beans
+                                        Special</span>
+                                </caption>
+                                <tr>
+                                    <td><img src="/images/yellow beans.jpg" alt="beans" id="poster"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- <div class="Card-back">
+                            <p>
+                                Grab a box and experience unadulterated, thick and smooth dairy products.
+                            </p>
+                            <button id='Buy-Now'>Buy Now<span
+                                    class="material-icons-outlined">arrow_forward</span></button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="Card-container">
+                    <div class="Cards">
+                        <div class="Card-front">
+                            <table class="products">
+                                <caption style="caption-side: bottom;"><span class="txt-header">beans
+                                        </span>
+                                </caption>
+                                <tr>
+                                    <td><img src="/images/yellow beans.jpg" alt="beans" id="poster"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- <div class="Card-back">
+                            <p>
+                                Get your hands on the box full of the tastiest and healthiest nuts.
+                            </p>
+                            <button id='Buy-Now'>Buy Now<span
+                                    class="material-icons-outlined">arrow_forward</span></button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="Card-container">
+                    <div class="Cards">
+                        <div class="Card-front">
+                            <table class="products">
+                                <caption style="caption-side: bottom;"><span class="txt-header">beans</span>
+                                </caption>
+                                <tr>
+                                    <td><img src="/images/yellow beans.jpg" alt="beans" id="poster"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- <div class="Card-back">
+                            <p>
+                                A box of flavour rich handpicked spices, to deliver you the authentic taste of
+                                Indian
+                                food.
+                            </p>
+                            <button id='Buy-Now'>Buy Now<span
+                                    class="material-icons-outlined">arrow_forward</span></button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="Card-container">
+                    <div class="Cards">
+                        <div class="Card-front">
+                            <table class="products">
+                                <caption style="caption-side: bottom;"><span class="txt-header">beans</span>
+                                </caption>
+                                <tr>
+                                    <td><img src="/images/yellow beans.jpg" alt="beans" id="poster"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- <div class="Card-back">
+                            <p>
+                                Searching for a vegan protein source, well you are on the right place, grab a combo
+                                box
+                                of
+                                India's finest and richest pulses.
+                            </p>
+                            <button id='Buy-Now'>Buy Now<span
+                                    class="material-icons-outlined">arrow_forward</span></button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- combo box section ends here -->
+    </div>
+
+    <!--Footer starts here-->
+    <div class="footer">
+        <div class="contactus">
+            <ul type=none>
+                <li><a>Contact Us</a></li>
+                <li><a>+91 9999988888</a></li>
+                <li><a>enquiries@farmfresh.com</a></li>
+            </ul>
+        </div>
+        <div class='enquiries'>
+            <ul type='none'>
+                <li><a>Payment and Billing</a></li>
+                <li><a>Returns</a></li>
+                <li><a>FAQ</a></li>
+                <li><a>Customer Forum</a></li>
+            </ul>
+        </div>
+        <div class='about-us'>
+            <ul type='none'>
+                <li><a>About Us</a></li>
+                <li><a>Work with Us</a></li>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms and Conditions</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Footer End-->
+
+    <!-- Script -->
+    <script src="/sources/js/index.js"></script>
+</body>
+
+</html>
